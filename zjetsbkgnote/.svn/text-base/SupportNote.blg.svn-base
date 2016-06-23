@@ -1,0 +1,203 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: SupportNote.aux
+The style file: biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10004 items from 5000.
+Database file #1: SupportNote-blx.bib
+Database file #2: SupportNote.bib
+I was expecting a `,' or a `}'---line 179 of file SupportNote.bib
+ :        
+ :        year            = "2011",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 262 of file SupportNote.bib
+ :        
+ :        eprint          = "1405.3940",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 273 of file SupportNote.bib
+ :        
+ :        year            = "2014",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 474 of file SupportNote.bib
+ : @article{OOOPAL
+ :                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 487 of file SupportNote.bib
+ : @article{Ciccolini:2007jr
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 502 of file SupportNote.bib
+ : @article{Ciccolini:2007ec
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 525 of file SupportNote.bib
+ : @article{Ackerstaff:1996gy
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 612 of file SupportNote.bib
+ : @article{Diehl:1993br
+ :                      ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 662 of file SupportNote.bib
+ :        
+ :        title           = ""
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 665 of file SupportNote.bib
+ : @article{MINLO
+ :               
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 791 of file SupportNote.bib
+ :        
+ :        title           = ""
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #3: bibtex/bib/atlas-paper.bib
+Biblatex version: 2.8
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2513 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2517 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2517 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2517 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2523 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2523 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2523 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2527 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2531 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2531 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2531 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2537 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2537 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2537 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2541 of file biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+Too many commas in name 1 of "Glen Cowan, Kyle Cranmer, Eilam Gross, Ofer Vitells" for entry cutandcountsignificance
+while executing---line 2659 of file biblatex.bst
+You've used 36 entries,
+            6047 wiz_defined-function locations,
+            1396 strings with 14572 characters,
+and the built_in function-call counts, 100136 in all, are:
+= -- 3390
+> -- 3220
+< -- 653
++ -- 949
+- -- 1391
+* -- 7897
+:= -- 6089
+add.period$ -- 0
+call.type$ -- 36
+change.case$ -- 277
+chr.to.int$ -- 36
+cite$ -- 70
+duplicate$ -- 11671
+empty$ -- 11328
+format.name$ -- 2255
+if$ -- 22355
+int.to.chr$ -- 0
+int.to.str$ -- 85
+missing$ -- 0
+newline$ -- 1046
+num.names$ -- 1311
+pop$ -- 11160
+preamble$ -- 1
+purify$ -- 410
+quote$ -- 0
+skip$ -- 5410
+stack$ -- 0
+substring$ -- 1341
+swap$ -- 4070
+text.length$ -- 710
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1354
+warning$ -- 0
+while$ -- 611
+width$ -- 0
+write$ -- 1009
+(There were 56 error messages)

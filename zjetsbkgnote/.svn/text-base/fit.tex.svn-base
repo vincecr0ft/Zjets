@@ -1,0 +1,43 @@
+\section{Fitting Procedure}
+\label{sec:fit}
+
+
+
+%Elias: Copied over this text by Martin here. I think we just need to expand it a little bit to go into all the details (write out the LLH?) and then this section doesn't need much more...
+
+The sensitivity to CP-odd couplings is estimated using a maximum-likelihood fit to the signal region and to different control regions for each decay channel. A detailed prescription how to estimate confidence intervals of the CP-odd mixing strength \dtilde~ is described below \cite{bib:statistical_data_analysis_cowan}. 
+
+The statistical analysis employs a likelihood function $\mathcal{L}(\mathbf{x}; \epsilon, \boldsymbol{\theta})$ depending on the actual measured data $\mathbf{x}$, the parameter of interest $\epsilon$ and further nuisance parameters $\boldsymbol{\theta}$. In this analysis the approach of a binned likelihood function with an underlying model of signal plus background is chosen, which is a product of Poisson probability terms for each bin in the distribution of the final discriminant, the Optimal Observable. The parameter of interest $\epsilon$ allows for choosing CP-mixing signal ($\epsilon=1$) or Standard Model only CP-even signal ($\epsilon=0$) hypothesis. A set of signal samples corresponding to different CP-odd mixing strength \dtilde~ are created by reweighting the purely CP-even (VBF)\Htt~ signal sample produced through ATLAS simulation, as described in Section~\ref{subsec:reweight}. The likelihood function can then be calculated in each point of \dtilde~ for the correcponding CP-mixing model using $\epsilon=1$, null hypothesis, or for the purely CP-even signal scenario (SM) using $\epsilon=0$, alternative hypothesis. The calculation is performed for a specific dataset $\mathbf{x}$, profiling the nuisance parameters to the best-fit values $\hat{\boldsymbol{\theta}}$, which includes information about systematic uncertainties, in terms of Gaussian constraints, or normalization factors, both affecting the expected numbers of signal and background events. In the large sample limit one can utilize that the negative logarithm of the likelihood function NLL allows for reading off directly the central confidence interval $[\hat{\dtilde}-\sigma_{\hat{\dtilde}},\hat{\dtilde}+\sigma_{\hat{\dtilde}}]$ using Neyman constructions:
+
+\begin{equation}
+  -log\mathcal{L}(\hat{\dtilde}\pm\sigma_{\hat{\dtilde}}) = -log\mathcal{L}_{\text{max}}+\frac{N^{2}}{2}
+\end{equation}
+
+This means after constructing the NLL curve by calculating the NLL value for each \dtilde~ hypothesis and a specific dataset $\mathbf{x}$, the 68.3\% central confidence interval can be determined from the best estimator $\hat{\dtilde}$, at which the NLL curve is minimal, by reading off the $\Delta$NLL=NLL-NLL$_{\text{min}}$ at 0.5. This interval should contain the true value of \dtilde in 68.3\% of all cases. The expected central confidence interval can be determined under the assumption that the pseudo measured dataset $\mathbf{x}$ contains the alternative hypothesis, background plus purely CP-even Standard Model signal. This pseudo dataset for $\epsilon=0$ is called Asimov dataset. 
+
+The normalization of the CP-mixed or CP-even (VBF)\Htt~ signal sample is introduced as an additional nuisance parameter and therefore a free floating normalization factor -- i.e. this analysis does not take any information about the corresponding cross section of CP-mixing scenarios into account but only the shape of the Optimal Observable. Higgs production through other processes (like gluon fusion, or associated with a vector boson) is normalised to the SM prediction with the corresponding uncertainties, as is the small amount of contamination from $WW$ decays of the Higgs boson.
+
+The strategy to build the fitmodel is illustrated in figure \ref{fig:fit_fitmodel_sketch}. Several control regions are included in the fitmodel beside the signal region to constrain background normalisations and nuisance parameters. In both \tll and \tlhad channels the signal region is defined as the high BDT$_{\text{score}}$ region  in the respective channel. Both channels use a low BDT$_{\text{score}}$ region as well as a top quark dominated control region in order to better constrain the background normalisations.  Furthermore \tll includes an additional control region enhanced with events from \Zll decays, since its contribution to the background composition in this channel is non-negligible. 
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{\includegraphics[width=0.8\textwidth]{figures/fitmodel_sketch_lh.png}  }\\
+   \subfloat[]{\includegraphics[width=0.8\textwidth]{figures/fitmodel_sketch_ll.png}  }
+   \caption{Sketch of fitmodels for \tlhad~ (a) and \tll~ (b) channel.}
+  \label{fig:fit_fitmodel_sketch}
+\end{figure}
+
+
+%To demonstrate the extraction of central confidence intervals, the procedure has been performed using Asimov data, normalizing the CP-even Standard Model (VBF)\Htt~ signal to 1.4 times the expected cross section, which is approximately the combined best-fit signal strength in the latest \Htt~ couplings analysis~\cite{EvidencePaper}. Figure \ref{fig:fit_injection} (a) shows the expected NLL curve in the \tll~ channel using the Asimov data as dataset $\mathbf{x}$, including statistical and a basic set of systematic uncertainties. The NLL$_{\text{min}}$ is located at \dtilde=0, which is expected for this choice of the Asimov data. The NLL values increase for higher values of $|\dtilde|$, which represents the incompatibility of the underlying model and the actual pseudo data. The turn-over feature in case of the \tll~ channel for relatively high values of \dtilde is also expected, because in the limit of purely CP-odd coupling structure of the signal the first order Optimal Observable's mean value is shifted to zero again corresponding to a decrease in sensitivity, since this model is CP-conserving. By injecting a CP-mixing signal into the pseudo Asimov dataset using $\epsilon=1$, the minimum of the NLL curve is expected to move to the corresponding underlying \dtilde~ value. The injection of \dtilde=-0.1 signal is shown in figure \ref{fig:fit_injection} (b). While the separation power between negative and positive \dtilde~ models is high, which is indicated by the increasing NLL curve in the region of positive \dtilde~ values, the separation between the tested negative models is relatively low. In this approximative scenario an exclusion of $\dtilde\gtrapprox 0.05$ could be stated at 1$\sigma$ level.   
+%
+%\begin{figure}[h!]
+%  \centering
+%   \subfloat[]{\includegraphics[width=0.45\textwidth]{figures/NLL_inject_m_0_00.eps}  }
+%   \subfloat[]{\includegraphics[width=0.45\textwidth]{figures/NLL_inject_m_0_10.eps}  }
+%   \caption{NLL as function of \dtilde~ values defining the underlying signal hypothesis, for the dilepton channel. The dataset includes Standard Model background plus pure CP-even Standard Model signal %$\epsilon=0$ 
+%   (a) or a CP-mixing model %$\epsilon=1$ 
+%   with \dtilde=-0.1 (b). The normalization of the signal is free-floating in the fit in both cases. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.}
+%  \label{fig:fit_injection}
+%\end{figure}
+%
+

@@ -1,0 +1,99 @@
+\section{Explanation of NLL curve behavior}
+\label{app:nllex}
+
+It is a well known fact that a distribution is fully characterised by its moments.
+In the following we only consider the first and second moment in order to get an 
+insight in the observed dependence of the {\it negative} $\Delta$  {\it log-likelihood (NLL)}
+on the parameter of interest $\tilde{d}\,$, which parametrises the strength of a possible CP odd 
+contribution to the maxtrix element. All integrals are performed over a CP-symmetric 
+part of phase space. The considerations try to explain the expected {\it NLL} curve for
+vanishing $\dtilde$ realised in nature.
+
+The matrix element $\mathcal{M}$ for VBF production is the sum of a CP-even contribution 
+$\mathcal{M}_{\textrm{SM}}$ from the SM and a CP-odd contribution $\mathcal{M}_{\textrm{CP-odd}}$ 
+from the dimension six operators considered:
+\begin{equation} 
+\mathcal{M} =\mathcal{M}_{\textrm{SM}}+\dtilde\cdot\mathcal{M}_{\textrm{CP-odd}}.
+\end{equation}
+The squared matrix element and  differential cross section has three contributions:
+\begin{equation} \label{eq:MEsquared}
+|\mathcal{M}|^{2}=|\mathcal{M}_{\textrm{SM}}|^{2}+ 
+\dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}}) +  \dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2} 
+\end{equation}
+\begin{equation} \label{eq:MEsquared}
+d \sigma = d\sigma_{SM} + \tilde{d}\, d\sigma_{CP odd} + \tilde{d}^2 \, d\sigma_{CP\,even} \, .
+\end{equation}
+
+The first $|\mathcal{M}|^{2}$ ($d\sigma_{SM}$) and third term  
+$\dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2}$ ($d\sigma_{CP\,even}$) 
+are both CP-even and hence do not yield a source of CP violation. The second term 
+$\dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}})$ ($d\sigma_{CP odd}$), 
+stemming from the interference of the two contributions to the matrix element, is CP-odd and is a possible 
+new source of CP-violation in the Higgs sector. The interference term integrated over a CP-symmetric part of phase 
+space vanishes and does therefore not contribute to the total cross section and observed event yield after applying 
+CP-symmetric selection criteria. The third term leads to an increase of the total cross section quadratic in $\dtilde$, 
+which is however not exploited in the analysis presented here.
+
+The analysis exploits the shape of distribution of the CP-odd optimal observable, which is 
+defined in terms of the matrix elements as 
+\begin{equation}
+OO  =  \frac {2 {\cal{R}}e ({\cal{M}}_{SM}{\cal{M}}^*_{CP\,odd})}{|{\cal{M}}_{SM}|^2} 
+\end{equation}
+
+The first moment of $OO$ is given by:
+\begin{equation}
+<OO> = \frac {\int OO \,  d\sigma_{SM} + \tilde{d}\, d\sigma_{CP odd} + \tilde{d}^2 \, d\sigma_{CP\,even}}   
+             {\int d\sigma_{SM} + \tilde{d}\, d\sigma_{CP\,odd} + \tilde{d}^2 \, d\sigma_{CP\,even}}   
+\end{equation}
+Due to the CP-odd character of the optimal observable the first and third term in the nominator
+vanish and the mean value simplifies to:
+\begin{equation}
+<OO>  =  \frac {\tilde{d} \, \int OO  d\sigma_{CP\,odd}}   
+                 {\int d\sigma_{SM} + \tilde{d}^2 \int d\sigma_{CP\,even}}   
+\end{equation}
+
+For small value of $\dtilde$ a linear rise with $\dtilde$ is expected as the term in the denominator 
+proportional to $\dtilde^2$ is small compared to the SM contribution. For large values of $\dtilde$ this term
+will dominate and the mean value will first scale approximately as $1/\dtilde$ and finally tend to the 
+SM value of zero. 
+
+The second moment of $OO$ is given by:
+\begin{equation}
+<OO^2> = \frac {\int OO^2 \,  d\sigma_{SM} + \tilde{d}\, d\sigma_{CP odd} + \tilde{d}^2 \, d\sigma_{CP\,even}}   
+             {\int d\sigma_{SM} + \tilde{d}\, d\sigma_{CP\,odd} + \tilde{d}^2 \, d\sigma_{CP\,even}}   
+\end{equation}
+Due to the CP-even character of $OO^2$ the second term in the nominator vanishes and 
+the expression simplifies to:
+\begin{equation}
+<OO^2>  =  \frac {\int OO^2  d\sigma_{SM}}{\int d\sigma_{SM} + \tilde{d}^2 \int d\sigma_{CP\,even}}   
++ \frac {\tilde{d}^2 \, \int OO^2  d\sigma_{CP\,even}}{\int d\sigma_{SM} + \tilde{d}^2 \int d\sigma_{CP\,even}}   
+\end{equation}
+
+The first term reproduces the moment of the SM for vanishing values of $\dtilde$ and then decreases
+with $\dtilde^2$.  The second term vanishes for vanishing values of $\dtilde$ and then first increases 
+approximately with $\dtilde^2$ and finally reaches a plateau independent on $\dtilde$.
+
+
+We believe that the derived dependence of the first and second moments on $\dtilde$ allows to explain that 
+the $NLL$ curve flattens off for large $\dtilde$ values as the first moment tends to zero and the second 
+one gets independent on $\dtilde$.  Whether a local maximum in $NLL$ is observed at intermediate $\dtilde$
+(e.g. for the signed azimuthal angle difference between the tagging jets) or not (e.g. for the optimal 
+observable) depends on the numerical values of the first and second moments in the SM ($\dtilde =0$)
+and for $\dtilde =1$ and their ratios, which are different for different observables. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

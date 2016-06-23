@@ -1,0 +1,97 @@
+\section{Signed Delta Phi}
+\label{app:signdphi}
+%\label{app:Signed $\Delta\Phi_jj$}
+
+The variable \signdphi is an alternative observable, which is sensitive to a CP-mixing coupling structure~\cite{bib:KlamZepp}. It is defined as the signed $\Delta\phi$ between both high $p_T$ jets in the final state with the sign being positive, if the $z$ momentum component of the leading jet is positive, and negativ, if the $z$ momentum componentof the leading jet is negative. The behavior of \signdphi for different signal models can be seen in figure~\ref{fig:plot_signdphi}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/signdphi.png}
+     \caption{\signdphi distribution for pure CP-even, CP-odd and CP-mixing models generated with VBF@NLO. The plots show the distribution at truth level, after the VBF cuts \ref{tab:cuts}}
+  \label{fig:plot_signdphi}
+\end{figure}
+ 
+Figure~\ref{fig:fit_result_postfit_signdphi} shows the observed \signdphi distribution in the signal regio of \tlhad and \tll. In addition, the \signdphi line shapes for different \dtilde signal models are compared to pure Standard Model signal in figure~\ref{fig:plot_leplep_oo_sr_signdphi}. Distributions of \signdphi in the control regions of \tlhad are shown in figure~\ref{fig:plot_lephad_oo_cr_signdphi} and of \tll in \ref{fig:plot_leplep_oo_cr_signdphi}. A reasonable agreement of data and expectation can be observed in all control regions. 
+
+
+A fit has been performed including control regions for several \dtilde models, using Asimov data with $\mu_{\text{Asimov}}=1.2$.  A comparison of the sensitivity to the default approach, using \oo as final discriminant, is shown in figure~\ref{fig:plot_leplep_crinclusive_nll}. The sensitivity of the \signdphi approach decreases for high dtilde values, since the shape approximates the Standard Model signal in contrast to intermediate \dtilde values. Overall, the default Optimal Observable approach shows an increased sensitivity compared to \signdphi.
+
+The observed $\Delta$NLL as function of \dtilde~is shown in figure~\ref{fig:fit_result_obs_signdphi}. The best-fit value of the signal-strength $\mu$ in this fit is $2.02^{+0.87}_{-0.77}$. Figure~\ref{fig:fit_result_obs_signdphi_snapshot} shows a comparison of the different channels and the combination when using the best-fit results for each nuisance parameter from the combined fit (at each \dtilde\ point), rather than from the fits of each channel independently.  
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/lh_SignDPhi_remap_postfit_unblind_p_0_000.eps}  }
+   \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/ll_SignDPhi_remap_postfit_unblind_p_0_000.eps}  }
+   \caption{Observed postfit distributions of \signdphi in the signal region for \tlhad~ (a) and \tll (b), including pure CP-even Standard Model signal (\dtilde=0). The error band includes systematic and statistical uncertainties.}
+  \label{fig:fit_result_postfit_signdphi}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{ \includegraphics[width=0.47\textwidth]{figures/leplep/comp3_signdphijj2_all_SR_cpHighVBFbVeto.eps}}
+   \caption{Comparison of \signdphi~for various signal models, normalized to unity: pure SM (black), signal model of $\dtilde=-0.2$ (blue) and a model of $\dtilde=+0.9$ (red). }
+  \label{fig:plot_leplep_oo_sr_signdphi}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+   %\subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/lephad/signdphijj2_SR_lephad.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/lephad/signdphijj2_LowBDTCR_lephad.eps}  }
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/lephad/signdphijj2_TopCR_lephad.eps}  }
+   \caption{Distributions of the \signdphi~in the final signal region (a), the low \bdtscore~ control region (b) and the top enriched control region (c) of the \tlhad\ channel.}
+  \label{fig:plot_lephad_oo_cr_signdphi}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/leplep/signdphijj2_all_SR_cpLowVBFbVeto_emb.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/leplep/signdphijj2_all_SR_cpVBFbTag_emb.eps}  }
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/leplep/signdphijj2_all_SR_cpVBFZllbVeto_emb.eps}  }
+   \caption{Distributions of the \signdphi~in the signal region (a), the low \bdtscore~ control region (b), in the top enriched control region (c) and the \Zll enriched control region (d) of the \tll\ channel.}
+  \label{fig:plot_leplep_oo_cr_signdphi}
+\end{figure}
+
+
+
+
+%\begin{figure}[h!]
+%  \centering
+%   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/NLL_090515_Basic1JetAddNoBtag_signdphijj2_SR.eps}  }
+%   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/muhat_090515_Basic1JetAddNoBtag_signdphijj2_SR.eps}  }\\
+%   \caption{NLL scan (a) and corresponding best-fit signal strength for signal region fit only for \tll, using \signdphi as final discriminant.}
+%  \label{fig:plot_leplep_signdphi_nll_signdphi}
+%\end{figure}
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/NLL_signdphijj2_SR_lephad.eps}  }
+%  \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/muhat_signdphijj2_SR_lephad.eps}  }\\
+%   \caption{NLL scan (a) and corresponding best-fit signal strength for signal region fit only for \tlhad with an Asimov signal strength of $\mu=1.2$, using \signdphi as final discriminant.}
+%  \label{fig:plot_lephad_signdphi_nll_signdphi}
+%\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  %\includegraphics[width=0.7\textwidth]{figures/leplep/comparison_090515_Basic1JetAddNoBtag_OptObsMMC_Comb.eps}
+  \includegraphics[width=0.6\textwidth]{figures/Combination_mu12_signdphi.eps}
+  \caption{Comparison of the combined fit of the Optimal Observable and the \signdphi approach using Asimov datasets.} 
+ \label{fig:plot_leplep_crinclusive_nll}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/results/Combination_cp_211015_SignDPhi.eps}
+   \caption{Observed $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis, for \tll (yellow), \tlhad (red) and their combination (black). The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.}
+  \label{fig:fit_result_obs_signdphi}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/Combination_NLL_constrained_signdphi.eps}
+   \caption{Observed $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis, for \tll (yellow) and \tlhad (red), calculated with the best-fit values of all nuisance parameters from the combined fit (the result of which is shown in black).  The green line indicates  the simple sum of the curves from the individual channels (reduced by the resulting offset), and can be seen to agree very well with the combination. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.}
+  \label{fig:fit_result_obs_signdphi_snapshot}
+\end{figure}

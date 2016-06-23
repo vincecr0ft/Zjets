@@ -1,0 +1,152 @@
+\section{Validation of signal sample re-weighting procedure}
+\label{app:reweight}
+
+{\color{blue}{This section has been updated, and all the plots and numbers now correspond to the new reweighting and $\oo$ definition, for a model where $\dtilde=\dtildeB$.}}
+
+As described in section ~\ref{subsec:reweight}, to simulate the effect of possible anomalous couplings at the HVV vertex, the existing POWHEG+PYTHIA8 Standard Model VBF signal sample is re-weigthed. The weights associated with each events are obtained as the ratio of the Matrix Element squared evaluated for the CP-mixed case one wishes to re-weight to, over the Standard Model Matrix Element squared. The Matrix Element calculations for the re-weighting are performed using code extracted from HAWK ~\cite{Ciccolini:2007jr,Ciccolini:2007ec}. 
+POWHEG includes matching of matrix elements and parton shower at NLO, meaning that there can be three different kinds of events (with $q$ and $\bar{q}$ interchangable): $qq \to qqH$, $qg \to qq\bar{q}H$ and $qq \to qqgH$. The re-weighting uses the corresponding Matrix Element at LO from HAWK for the $2\to2+H$ or $2\to3+H$ process, taking into account the flavours of incoming and outgoing partons. This procedure is expected to give a very good approximation to a real and full NLO re-weighting. This subsection describes the validation of this re-weighting procedures. 
+
+%{\color{blue} {\large N.B.:} the plots shown in this section use an older definition of both the re-weighting code and of the Optimal Observable calculation. In the older version of the re-weighting code, only the LO $2\to2+H$ Matrix Elements are included, and the 4-vectors of the two leading parton-level jets are used as input to the re-weighting code (for $2\to3+H$ events, the third jet is ignored). Also, the flavour of the incoming and outgoing partons are not used as input to the Matrix Elementent calculation. In the older Optimal Observable calculation photon couplings are set to zero. Also, both the re-weighting and the Optimal Obervable calculations are based on a theoretical model for which $\dtildeB = \dtilde$. 
+
+The validation of the re-weighting procedure is achieved by comparing a sample of SM simulated events, after the re-weighting, and a sample of events directly generated assuming the same amount of CP-mixing. \\
+Two are the Monte Carlo generators considered in this study: VBF@NLO ~\cite{vbfnlo270} and MG5\_aMC@NLO ~\cite{mg5amcnlo}.
+Both the HAWK routines and VBF@NLO implement the same parametrisation of the effective lagrangian (see equation \ref{eq:Leff}), hence it is easier to make sure that re-weighted sample and the one generated with VBF@NLO correspond to the same BSM model. Table \ref{tab:parvbfnlo} shows the value of the parameter used to simulate events with VBF@NLO.
+\begin{table}[h!]
+  \begin{center}
+     \begin{tabular}{|l|l|}
+    \hline
+    \hline
+    VBF@NLO parameters,  $\dtilde = \dtildeB$=0.1 & \\
+    \hline
+    PARAMETR2  = .true.   &  Parametrisation of the L3-Collaboration \\
+    D\_EVEN     = 0.0d0   &  d,     CP-even                                                                  \\
+    DB\_EVEN    = 0.0d0   &  dB                                                                             \\
+    DG1Z\_EVEN  = 0.0D0   &  Delta\_g1\_Z                                                                      \\
+    DKGAM\_EVEN = 0.0D0   &  Delta\_kappa\_gamma                                                               \\
+    D\_ODD      = 0.1d0   &  \dtilde,    CP-odd                                                                    \\
+    DB\_ODD     = 0.1d0   &  \dtildeB                                                                             \\
+    KGAM\_ODD   = 0.0d0   &  kappa\_gamma                                                                     \\
+    HVV1       = 4        & anomalous couplings: hzg = 0, hgg = 1, hzz = 2, hww = 3, all = 4\\
+    TREEFACW   =1.0d0     & factor for SM hWW tensor (sin(alpha-beta) in MSSM) \\
+    TREEFACZ   = 1.0d0    & factor for SM hZZ tensor (sin(alpha-beta) in MSSM) \\ 
+    LOOPFAC    = 0.0d0    & factor multiplying hZgamma and hgammagamma sm loops\\
+    \hline
+    \hline
+  \end{tabular}
+  \caption{Parameters set in anom\_HVV.dat, input file for VBF@NLO.}
+  \label{tab:parvbfnlo}
+  \end{center}
+\end{table}
+VBF@NLO can only generate events at Leading-Order (and differential distribution at Next-To-Leading), that are then stored in the standard Les Houches files (LHE). The four-vectors of the incoming and outgoing partons, and of the Higgs boson, retreived from the VBF@NLO LHE files, are used as input to the re-weighting code. The minimal set of VBF-like cuts applied to the partons is listed in table \ref{tab:cuts}. Figure \ref{fig:VBFNLOvsHAWK} shows the distribution of the \signdphi and the optimal observable variables for standard model VBF events re-weighted to $\dtilde = \dtildeB=0.1$, and for events generated directly with VBF@NLO (see Table~\ref{tab:parvbfnlo}).
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|c|}
+    \hline
+    VBF-like cuts\\
+    \hline
+    \hline
+    $\pt(p) > 25 \GeV $\\ 
+    $\mid {\eta(p)} \mid< 4.5 $\\
+    $\mid \Delta\eta(p_{1},p_{2}) \mid > 2.8$ \\
+    $\mid \Delta R(p_{1},p_{2})  \mid > 0.4$\\
+    $M(p_{1}p_{2}) > 500 \GeV$ \\
+    \hline
+  \end{tabular}
+  \caption{List of minimal selection requirements applied to all the comparions discussed in this section. The cuts are applied to parton-level quantities for both LO and NLO comparisons.}
+  \label{tab:cuts}
+  \end{center}
+\end{table}
+\begin{figure}[h!]
+\centering 
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/dphi_vbfnlo_new_reweight_db.pdf}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/optobs_vbfnlo_reweight_new_db.pdf}}
+\caption{Distribution of \signdphi and optimal observable for VBFNLO Standard Model events after re-weighting (in red) and VBFNLO events generated with \dtilde=\dtildeB=0.1. Both processese are generated at LO, and only parton-level information are used as input to the re-weight.}
+\label{fig:VBFNLOvsHAWK}
+\end{figure}
+
+%As discussed in \ref{subsec:mcsamples}, the Standard Model VBF signal samples is generated at Next-To-Leading order by POWHEG+Pythia8, and to validate the reweighing at 
+
+The MG5\_aMC@NLO program, instead, can simulate events with anomalous couplings also at NLO. This make it possible to test how good of an approximation it is to re-weight separetely the $2\to2+H$ or $2\to3+H$ process instead of developing a full NLO re-weighting. This is important for the analysis, since the Standard Model VBF signal sample that is reweighted is generated at Next-To-Leading order by POWHEG+PYTHIA.
+In MG5\_aMC@NLO, the effective lagrangian is expressed in term of the couplings of the Higgs bosons to the photon A, and the W and Z bosons (see \ref{eq:Leff_MG5}) . The relation between those couplings and \dtilde are shown by equations \ref{eq:translations}. Table \ref{tab:MG5par} shows the numerical values of the input parameters used to generate the MG5\_aMC@NLO samples using the characterization model ~\cite{HiggsCharacterisationModel} that correspond to \dtilde=\dtildeB=0.1. 
+A good agreement is found when comparing both the cross section calculated by MG5\_aMC@NLO and VBF@NLO for the same CP-mixed state (see table \ref{tab:xsec}), and the distributions for \signdphi and for the Optimal Observable (see figure \ref{fig:VBFNLOvsMG5LOBSM}).
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    \hline
+    MG5\_aMC@NLO parameters  numerical values, \dtilde=\dtildeB=0.1 \\
+    \hline
+    $c_{\alpha}  = 0.6 $ \\
+    $K_{SM}  = 1.\bar{6} $ \\
+    $k_{AWW} = -2.03 $ \\
+    $k_{AZZ} = -2.03 $ \\
+    $k_{A\gamma\gamma} = -155.97 $ \\
+    $k_{AZ\gamma} = 0 $ \\
+    \hline
+    \hline
+  \end{tabular}
+  \caption{Input parameters for MG5\_aMC@NLO. All other anomalous couplings term are set to zero.}
+  \label{tab:MG5par}
+  \end{center}
+\end{table}
+%
+%\begin{table}[h]
+%  \begin{center}
+%  \begin{tabular}{|c|c|}
+%    \hline
+%    MG5\_aMC@NLO parameters  numerical values, \dtilde=0.1 \\
+%    $\dtilde = - frac{1}{2} frac{M_{W}s_{\alpha} k_{AWW}}{\e\Lambda } \sintheta $                 & 
+%    $\dtilde = - frac{1}{2} frac{M_{W}s_{\alpha} k_{AZZ}}{\e\Lambda (\costheta^{2})} \sintheta $   &
+%    $\dtilde = - \fac{1}{2}s_{\alpha} k_{A\gamma\gamma} g_{A\gamma\gamma} \frac{M_{W}}{\e \sintheta}
+%    $\dtilde = - s_{\alpha} k_{AZ\gamma} g_{AZ\gamma} \frac{M_{W}\sin2theta}{\e \sin2theta} $       
+%    \hline
+%  \end{tabular}
+%  \caption{Input parameters for MG5\_aMC@NLO. All other anomalous couplings term are set to zero.}
+%  \label{tab:MG5par}
+%  \end{center}
+%\end{table}
+%
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|c|c|}
+    \hline\hline
+    $\sigma_{VBF@NLO}$ [fb] & $\sigma_{MG5\_aMC@NLO}$ [fb] \\
+    \hline
+    $1451 \pm 1$   & $1447 \pm 2$ \\
+    \hline\hline
+  \end{tabular}
+  \caption{Cross sections for VBF production of a CP-mixed state, corresponding to \dtilde=\dtildeB=0.1}
+  \label{tab:xsec}
+  \end{center}
+\end{table}
+
+\begin{figure}[h!]
+\centering 
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/dphi_vbfnlo_amcnlo_db.pdf}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/optobs_vbfnlo_amcnlo_db.pdf}}
+\caption{Distribution of \signdphi and optimal observable for VBF@NLO and MG5\_aMC@NLO generated sample for a CP-mixed model (\dtilde=\dtildeB=0.1).Both processeses are generated at LO.}
+\label{fig:VBFNLOvsMG5LOBSM}
+\end{figure}
+ Figure \ref{fig:MG5vsHAWKLO} shows the \signdphi and the optimal observable distribution for standard model VBF events generated at Leading-Order with MG5\_aMC@NLO and reweighted to \dtilde=\dtildeB=0.1, and for events generated directly in MG5\_aMC@NLO. The reweighting at Leading-Order performs very well.
+\begin{figure}[h!]
+\centering 
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/dphi_amcnlo_reweight_new_db.pdf}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/optobs_amcnlo_reweight_new_db.pdf}}
+\caption{Distribution of \signdphi and optimal observable for MG5\_aMC@NLO Standard Model events after re-weighting (in red) and MG5\_aMC@NLO events generated with \dtilde=\dtildeB=0.1. Both processeses are generated at LO, and only parton-level information are used as input to the re-weight.}
+\label{fig:MG5vsHAWKLO}
+\end{figure}
+The same comparison, but at Next-To-Leading order, is shown in figure \ref{fig:MG5vsHAWKNLO}. The LHE files generated by MG5\_aMC@NLO at NLO do not carry any physical meaning unless they are showered, so in the NLO comparisons, MG5\_aMC@NLO is interfaced with PYTHIA8. The events are stored in HEPMC format. A Rivet routine is used to store the information on the partons in a root file.The weigths and optimal observable are calculated from these root files.
+ \begin{figure}[h!]
+\centering 
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/dphi_NLO_new_reweight_db.pdf}}
+\subfloat[]{\includegraphics[width=0.49\textwidth]{figures/optobs_NLO_new_reweight_db.pdf}}
+\caption{Distribution of \signdphi and optimal observable for MG5\_aMC@NLO Standard Model events after re-weighting (in red) and MG5\_aMC@NLO events generated with \dtilde=\dtildeB=0.1. Both processeses are generated at NLO, and parton-level information are used as input to the re-weight.}
+\label{fig:MG5vsHAWKNLO}
+\end{figure}
+No significant sign of disagreement in shown by this comparison, so we consider the validation of the re-weighting at NLO completed.
+
+
+
+
+
+

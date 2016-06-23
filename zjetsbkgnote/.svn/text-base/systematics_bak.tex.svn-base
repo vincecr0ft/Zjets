@@ -1,0 +1,707 @@
+\section{Systematic Uncertainties}
+\label{sec:systematics}
+
+
+%{\color{blue}This section should describe the systematics. Most of them are the same as in the couplings analysis, so no need to describe them here, but of course we need to quantify their effect in our new SR. Thus this section will need a table with the effect of the various systematics on the yields in each channel, and we should also include plots showing the effect of shape-related systematic variations (for that, I would propose that we just select to show here the most important shape variations - the remaining ones can be put in an appendix if desired). Also, in case we end up applying any new systematics not considered in the couplings analysis, they of course need to be described here.}
+
+The same sources of systematic uncertainties considered in the couplings analysis are also considered for the present analysis. The details of these are provided in Section 8 of Ref.~\cite{HtautauSupport}. The effects of the systematic uncertainties on the expected yields and shapes are re-evaluated in the signal region of the present analysis, following the same methodology. The corresponding shape variations, which are considered in the analysis, are shown in figure~\ref{fig:sys_lh1}, \ref{fig:sys_lh2}, \ref{fig:sys_lh3} and~\ref{fig:sys_lh4} for signal and background contributions in the \tlhad channel in the high BDT signal region. The prefit uncertainties on the normalization of each sample are summarized in table~\ref{tab:systematics_np_lh0}, \ref{tab:systematics_np_lh1}, \ref{tab:systematics_np_lh3}, \ref{tab:systematics_np_lh4} and \ref{tab:systematics_np_lh5}. The shape variations for the \tll channel are shown in figure~\ref{fig:sys_ll1}, \ref{fig:sys_ll2} and~\ref{fig:sys_ll3} and the \tll prefit normalization uncertainties are summarized in table~\ref{tab:systematics_np_ll0},~\ref{tab:systematics_np_ll1},~\ref{tab:systematics_np_ll2},~\ref{tab:systematics_np_ll3} and~\ref{tab:systematics_np_ll4}. 
+
+\clearpage
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JES_1112_Detector1.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JES_1112_Modelling1.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JES_Eta_Modelling.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JES_FlavComp_TAU_Q.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/signal_ATLAS_JES_FlavResp.eps}
+  }
+  \caption{Shape variations of $VBFH\to\tau\tau$ for \dtilde=0 in high BDT signal region for \tlhad.}
+  \label{fig:sys_lh1}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/ggH_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/ggH_ATLAS_JES_Eta_Modelling.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Top_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Top_ATLAS_JES_1112_Detector1.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Top_ATLAS_JES_Eta_Modelling.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_EL_RES.eps}
+  }
+  \caption{Shape variations of background samples in high BDT signal region for \tlhad.}
+  \label{fig:sys_lh2}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_1112_Modelling1.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_2012_Eta_StatMethod.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_Eta_Modelling.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_FlavComp_TAU_G.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_FlavResp.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_Mu.eps}
+  }
+  \caption{Shape variations of background samples in high BDT signal region for \tlhad.}
+  \label{fig:sys_lh3}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_JES_NPV.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_MET_RESOSOFT_2012.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/lephad/lh_shape_NPs/Zl2t_ATLAS_TES_Model_2012.eps}
+  }
+  \caption{Shape variations of background samples in high BDT signal region for \tlhad.}
+  \label{fig:sys_lh4}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/VBF_p_0_00_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/VBF_p_0_00_ATLAS_JES_2012_Detector1.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/VBF_p_0_00_ATLAS_JES_Eta_Modelling_LL.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/VBF_p_0_00_ATLAS_JES_FlavComp_TAU_Q.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/VBF_p_0_00_ATLAS_JES_FlavResp.eps}
+  }
+  \caption{Shape variations of the signal in high BDT signal region for \tll.}
+  \label{fig:sys_ll1}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/ggH_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/ggH_ATLAS_JES_Eta_Modelling_LL.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JER.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JES_2012_Modelling1.eps}
+  }\\
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JES_Eta_Modelling_LL.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JES_FlavComp_TAU_G.eps}
+  }
+  \caption{Shape variations of background samples in high BDT signal region for \tll.}
+  \label{fig:sys_ll2}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JES_FlavResp.eps}
+  }
+  \subfloat[]{
+    \includegraphics[width=0.4\textwidth]{figures/leplep/ll_shape_NPs/Other_ATLAS_JES_NPV.eps}
+  }
+  \caption{Shape variations of background samples in high BDT signal region for \tll.}
+  \label{fig:sys_ll3}
+\end{figure}
+
+
+\clearpage
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+    $VBFH\to\tau\tau$ & ATLAS\_EL\_SCALE & 1.0 & 1.0 \\ 
+    $VBFH\to\tau\tau$ & ATLAS\_JER & 0.98 & 1.02 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_1112\_Detector1 & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_Eta\_Modelling & 1.07 & 0.93 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_FlavComp\_TAU\_Q & 1.04 & 0.96 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_FlavResp & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_1112\_Modelling1 & 1.04 & 0.96 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_Mu & 1.0 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_NPV & 1.0 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Statistical1 & 1.0 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_TES\_InSitu\_2012 & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_TES\_Model\_2012 & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_PU\_RESCALE\_2012 & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_EL\_EFF & 1.0 & 1.0 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_MU\_EFF & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_TAU\_ID\_STAT\_2012 & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_TAU\_ID\_2012 & 1.03 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_BR\_tautau & 1.06 & 0.94 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_UE\_qq & 1.06 & 0.94 \\ 
+$VBFH\to\tau\tau$ & QCDscale\_qqH & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & pdf\_Higgs\_qq & 1.03 & 0.97 \\ 
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tlhad channel in high BDT signal region for background and signal samples.}
+  \label{tab:systematics_np_lh0}
+  \end{center}
+\end{table}
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{background}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+$ggH\to\tau\tau$ & ATLAS\_EL\_SCALE & 1.04 & 0.94 \\ 
+$ggH\to\tau\tau$ & ATLAS\_EL\_RES & 1.02 & 0.96 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JER & 0.85 & 1.15 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_1112\_Detector1 & 1.05 & 0.93 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.03 & 0.99 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_Eta\_Modelling & 1.03 & 0.9 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_FlavComp\_TAU\_G & 1.02 & 0.92 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_FlavResp & 1.01 & 0.92 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_1112\_Modelling1 & 1.07 & 0.92 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_Mu & 0.93 & 1.06 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_NPV & 1.01 & 0.95 \\ 
+$ggH\to\tau\tau$ & ATLAS\_JES\_2012\_Statistical1 & 1.01 & 0.97 \\ 
+$ggH\to\tau\tau$ & ATLAS\_MET\_RESOSOFT\_2012 & 1.05 & 0.91 \\ 
+$ggH\to\tau\tau$ & ATLAS\_MET\_SCALESOFT\_2012 & 1.04 & 0.94 \\ 
+$ggH\to\tau\tau$ & ATLAS\_MU\_SCALE & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$ & ATLAS\_TES\_InSitu\_2012 & 1.01 & 0.93 \\ 
+$ggH\to\tau\tau$ & ATLAS\_TES\_Model\_2012 & 1.06 & 0.94 \\ 
+$ggH\to\tau\tau$ & ATLAS\_TES\_SingPart\_2012 & 0.94 & 1.06 \\ 
+$ggH\to\tau\tau$ & ATLAS\_PU\_RESCALE\_2012 & 1.02 & 0.99 \\ 
+$ggH\to\tau\tau$ & ATLAS\_EL\_EFF & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$ & ATLAS\_MU\_EFF & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$ & ATLAS\_TAU\_ID\_STAT\_2012 & 1.02 & 0.98 \\ 
+$ggH\to\tau\tau$ & ATLAS\_TAU\_ID\_2012 & 1.03 & 0.97 \\ 
+$ggH\to\tau\tau$ & ATLAS\_BR\_tautau & 1.06 & 0.94 \\ 
+$ggH\to\tau\tau$ & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$ggH\to\tau\tau$ & ATLAS\_UE\_gg & 1.3 & 0.7 \\ 
+$ggH\to\tau\tau$ & pdf\_Higgs\_gg & 1.08 & 0.93 \\ 
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tlhad channel in high BDT signal region for background and signal samples.}
+  \label{tab:systematics_np_lh1}
+  \end{center}
+\end{table}
+\newpage
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{background}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+Fake & ATLAS\_EL\_SCALE & 1.0 & 1.0 \\ 
+Fake & ATLAS\_EL\_EFF & 1.0 & 1.0 \\ 
+Fake & ATLAS\_MU\_EFF & 1.0 & 1.0 \\ 
+Fake & ATLAS\_ANA\_LH12\_Fake\_vbf\_COMP & 1.04 & 0.96 \\ 
+Fake & ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT1 & 1.02 & 0.98 \\ 
+Fake & ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT2 & 1.02 & 0.98 \\ 
+Fake & ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT3 & 1.02 & 0.98 \\ 
+Top & ATLAS\_EL\_SCALE & 1.0 & 1.0 \\ 
+Top & ATLAS\_JER & 0.88 & 1.12 \\ 
+Top & ATLAS\_JES\_Flavb & 0.97 & 1.0 \\ 
+Top & ATLAS\_JES\_1112\_Detector1 & 0.97 & 1.0 \\ 
+Top & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.0 & 1.05 \\ 
+Top & ATLAS\_JES\_Eta\_Modelling & 0.89 & 1.07 \\ 
+Top & ATLAS\_JES\_FlavComp\_TAU\_Q & 1.04 & 0.98 \\ 
+Top & ATLAS\_JES\_FlavResp & 1.04 & 0.93 \\ 
+Top & ATLAS\_JES\_1112\_Modelling1 & 1.09 & 1.0 \\ 
+Top & ATLAS\_JES\_Mu & 1.0 & 1.04 \\ 
+Top & ATLAS\_JES\_NPV & 1.04 & 0.88 \\ 
+Top & ATLAS\_JES\_2012\_Statistical1 & 0.98 & 1.0 \\ 
+Top & ATLAS\_MET\_RESOSOFT\_2012 & 0.93 & 1.05 \\ 
+Top & ATLAS\_MET\_SCALESOFT\_2012 & 1.0 & 0.93 \\ 
+Top & ATLAS\_MU\_SCALE & 1.0 & 1.01 \\ 
+Top & ATLAS\_TES\_InSitu\_2012 & 1.0 & 0.97 \\ 
+Top & ATLAS\_TES\_Model\_2012 & 0.96 & 1.03 \\ 
+Top & ATLAS\_TES\_SingPart\_2012 & 1.05 & 1.0 \\ 
+Top & ATLAS\_PU\_RESCALE\_2012 & 1.06 & 0.93 \\ 
+Top & ATLAS\_EL\_EFF & 1.01 & 0.99 \\ 
+Top & ATLAS\_MU\_EFF & 1.01 & 0.99 \\ 
+Top & ATLAS\_TAU\_ID\_STAT\_2012 & 1.02 & 0.98 \\ 
+Top & ATLAS\_TAU\_ID\_2012 & 1.03 & 0.97 \\ 
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tlhad channel in high BDT signal region for background and signal samples.}
+  \label{tab:systematics_np_lh3}
+  \end{center}
+\end{table}
+\newpage
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{background}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+Diboson & ATLAS\_EL\_SCALE & 1.0 & 1.0 \\ 
+Diboson & ATLAS\_EL\_RES & 1.2 & 1.0 \\ 
+Diboson & ATLAS\_JER & 1.16 & 0.84 \\ 
+Diboson & ATLAS\_JES\_1112\_Detector1 & 0.83 & 1.16 \\ 
+Diboson & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.17 & 0.83 \\ 
+Diboson & ATLAS\_JES\_Eta\_Modelling & 1.0 & 0.68 \\ 
+Diboson & ATLAS\_JES\_FlavComp\_TAU\_Q & 0.66 & 1.01 \\ 
+Diboson & ATLAS\_JES\_FlavResp & 0.83 & 1.17 \\ 
+Diboson & ATLAS\_JES\_1112\_Modelling1 & 1.01 & 0.84 \\ 
+Diboson & ATLAS\_JES\_NPV & 0.83 & 1.15 \\ 
+Diboson & ATLAS\_JES\_2012\_Statistical1 & 0.66 & 1.17 \\ 
+Diboson & ATLAS\_MET\_RESOSOFT\_2012 & 1.32 & 0.68 \\ 
+Diboson & ATLAS\_MU\_SCALE & 1.34 & 0.66 \\ 
+Diboson & ATLAS\_TES\_InSitu\_2012 & 1.14 & 0.83 \\ 
+Diboson & ATLAS\_TES\_Model\_2012 & 1.03 & 0.66 \\ 
+Diboson & ATLAS\_PU\_RESCALE\_2012 & 0.98 & 1.02 \\ 
+Diboson & ATLAS\_EL\_EFF & 1.0 & 1.0 \\ 
+Diboson & ATLAS\_MU\_EFF & 1.02 & 0.98 \\ 
+Diboson & ATLAS\_TAU\_ID\_STAT\_2012 & 1.01 & 0.99 \\ 
+Diboson & ATLAS\_TAU\_ID\_2012 & 1.02 & 0.98 \\ 
+Diboson & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+Diboson & QCDscale\_Diboson & 1.05 & 0.95 \\ 
+Diboson & pdf\_qq & 1.04 & 0.96 \\ 
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tlhad channel in high BDT signal region for background and signal samples.}
+  \label{tab:systematics_np_lh4}
+  \end{center}
+\end{table}
+
+\newpage
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{background}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+$Z\to ll$ & ATLAS\_EL\_SCALE & 1.06 & 0.92 \\ 
+$Z\to ll$ & ATLAS\_EL\_RES & 0.97 & 1.0 \\ 
+$Z\to ll$ & ATLAS\_JER & 1.08 & 0.92 \\ 
+$Z\to ll$ & ATLAS\_JES\_1112\_Detector1 & 1.07 & 0.94 \\ 
+$Z\to ll$ & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.01 & 0.94 \\ 
+$Z\to ll$ & ATLAS\_JES\_Eta\_Modelling & 1.67 & 0.8 \\ 
+$Z\to ll$ & ATLAS\_JES\_FlavComp\_TAU\_G & 1.45 & 0.89 \\ 
+$Z\to ll$ & ATLAS\_JES\_FlavResp & 1.38 & 0.93 \\ 
+$Z\to ll$ & ATLAS\_JES\_1112\_Modelling1 & 1.43 & 0.95 \\ 
+$Z\to ll$ & ATLAS\_JES\_Mu & 0.99 & 1.37 \\ 
+$Z\to ll$ & ATLAS\_JES\_NPV & 1.32 & 0.96 \\ 
+$Z\to ll$ & ATLAS\_JES\_2012\_Statistical1 & 1.04 & 0.95 \\ 
+$Z\to ll$ & ATLAS\_MET\_RESOSOFT\_2012 & 1.0 & 0.97 \\ 
+$Z\to ll$ & ATLAS\_MET\_SCALESOFT\_2012 & 1.03 & 0.97 \\ 
+$Z\to ll$ & ATLAS\_MU\_SCALE & 1.03 & 1.0 \\ 
+$Z\to ll$ & ATLAS\_TES\_InSitu\_2012 & 1.09 & 0.97 \\ 
+$Z\to ll$ & ATLAS\_TES\_Model\_2012 & 0.98 & 1.02 \\ 
+$Z\to ll$ & ATLAS\_TES\_SingPart\_2012 & 0.97 & 1.02 \\ 
+$Z\to ll$ & ATLAS\_PU\_RESCALE\_2012 & 0.99 & 1.01 \\ 
+$Z\to ll$ & ATLAS\_EL\_EFF & 1.01 & 0.99 \\ 
+$Z\to ll$ & ATLAS\_MU\_EFF & 1.0 & 1.0 \\ 
+$Z\to ll$ & ATLAS\_TAU\_EFAKE\_2012 & 1.25 & 0.75 \\ 
+$Z\to ll$ & ATLAS\_ANA\_LH12\_Zlt\_vbf\_DETAJJ & 1.1 & 0.9 \\ 
+$Z\to ll$ & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$Z\to ll$ & QCDscale\_V & 1.01 & 0.99 \\ 
+$Z\to ll$ & pdf\_qq & 1.04 & 0.96 \\ 
+$Z\to\tau\tau$ & ATLAS\_EL\_SCALE & 1.1 & 0.89 \\ 
+$Z\to\tau\tau$ & ATLAS\_EL\_RES & 1.07 & 0.91 \\ 
+$Z\to\tau\tau$ & ATLAS\_MU\_SCALE & 1.0 & 1.02 \\ 
+$Z\to\tau\tau$ & ATLAS\_TES\_InSitu\_2012 & 1.05 & 0.93 \\ 
+$Z\to\tau\tau$ & ATLAS\_TES\_Model\_2012 & 1.03 & 0.92 \\ 
+$Z\to\tau\tau$ & ATLAS\_TES\_SingPart\_2012 & 1.02 & 0.91 \\ 
+$Z\to\tau\tau$ & ATLAS\_EL\_EFF\_Emb & 1.0 & 1.0 \\ 
+$Z\to\tau\tau$ & ATLAS\_MU\_EFF\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau$ & ATLAS\_TAU\_ID\_STAT\_2012 & 1.02 & 0.98 \\ 
+$Z\to\tau\tau$ & ATLAS\_TAU\_ID\_2012 & 1.03 & 0.97 \\ 
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tlhad channel in high BDT signal region for background and signal samples.}
+  \label{tab:systematics_np_lh5}
+  \end{center}
+\end{table}
+
+\newpage
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    
+    \multicolumn{4}{|c|}{\tll high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+    $VBFH\to\tau\tau$ & ATLAS\_EL\_SCALE & 1.0 & 1.0 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JER & 1.03 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Statistical1 & 1.0 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Statistical3 & 1.0 & 1.0 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Modelling1 & 1.03 & 0.96 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Detector1 & 1.01 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_Eta\_Modelling\_LL & 1.07 & 0.92 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_Mu & 1.0 & 1.0 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_NPV & 1.0 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_2012\_PileRho\_TAU\_QQ & 1.01 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_FlavComp\_TAU\_Q & 1.04 & 0.96 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_JES\_FlavResp & 1.02 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_TRIG\_LL12\_SF & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_EL\_EFF\_2012 & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_MU\_EFF\_2012 & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_UE\_qq & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & NLO\_EW\_Higgs & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & pdf\_Higgs\_qq\_ACCEPT & 1.01 & 0.99 \\ 
+$VBFH\to\tau\tau$ & pdf\_Higgs\_qq & 1.03 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_Matching\_ACCEPT & 1.04 & 0.96 \\ 
+$VBFH\to\tau\tau$ & QCDscale\_qqH & 1.02 & 0.98 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_BR\_tautau & 1.06 & 0.94 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$VBFH\to\tau\tau$ & ATLAS\_BCH\_LL12\_bv & 1.0 & 1.0 \\ 
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for the signal sample.}
+  \label{tab:systematics_np_ll0}
+  \end{center}
+\end{table}
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tll high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+$ggH\to\tau\tau$  & ATLAS\_EL\_SCALE & 0.97 & 1.02 \\ 
+$ggH\to\tau\tau$  & ATLAS\_EL\_RES & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_MU\_SCALE & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Statistical1 & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Statistical2 & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Statistical3 & 1.03 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Modelling1 & 1.02 & 0.95 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Modelling2 & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Modelling3 & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Detector1 & 1.01 & 0.95 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Detector3 & 1.02 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Mixed1 & 1.0 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_Eta\_Modelling\_LL & 1.09 & 0.89 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.01 & 0.97 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_Mu & 0.99 & 1.01 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_NPV & 1.0 & 0.98 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_PilePt & 1.01 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_2012\_PileRho\_TAU\_GG & 1.0 & 0.96 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_FlavComp\_TAU\_G & 1.03 & 0.94 \\ 
+$ggH\to\tau\tau$  & ATLAS\_JES\_FlavResp & 1.02 & 0.95 \\ 
+$ggH\to\tau\tau$  & ATLAS\_MET\_RESOSOFT & 1.01 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_MET\_SCALESOFT & 0.99 & 1.0 \\ 
+$ggH\to\tau\tau$  & ATLAS\_TRIG\_LL12\_SF & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_EL\_EFF\_2012 & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_MU\_EFF\_2012 & 1.01 & 0.99 \\ 
+$ggH\to\tau\tau$  & ATLAS\_UE\_gg & 0.96 & 1.04 \\ 
+$ggH\to\tau\tau$  & pdf\_Higgs\_gg\_ACCEPT & 1.06 & 0.94 \\ 
+$ggH\to\tau\tau$  & pdf\_Higgs\_gg & 1.08 & 0.93 \\ 
+$ggH\to\tau\tau$  & QCDscale\_ggH2in & 1.26 & 0.79 \\ 
+$ggH\to\tau\tau$  & ATLAS\_BR\_tautau & 1.06 & 0.94 \\ 
+$ggH\to\tau\tau$  & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$ggH\to\tau\tau$  & ATLAS\_BCH\_LL12\_bv & 1.0 & 1.0 \\ 
+
+
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for background samples.}
+  \label{tab:systematics_np_ll1}
+  \end{center}
+\end{table}
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tll high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+$Z\to\tau\tau\to ee$ & ATLAS\_ANA\_EMB\_ISOL\_2012 & 0.94 & 1.0 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_ANA\_EMB\_MFS\_2012 & 1.04 & 0.89 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_EL\_RES & 0.95 & 1.05 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_EL\_SCALE & 1.08 & 0.98 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_MET\_RESOSOFT & 0.99 & 1.01 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_MET\_SCALESOFT & 1.03 & 0.98 \\ 
+$Z\to\tau\tau\to ee$ & ATLAS\_EL\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to ee$  & ATLAS\_ANA\_LL12\_Ztt\_bv & 1.15 & 0.85 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_ANA\_EMB\_ISOL\_2012 & 0.86 & 1.0 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_ANA\_EMB\_MFS\_2012 & 0.99 & 1.04 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MUMS\_RES & 1.04 & 0.99 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MU\_SCALE & 1.05 & 0.99 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MUID\_RES & 1.04 & 1.0 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MET\_RESOSOFT & 0.97 & 1.0 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MET\_SCALESOFT & 0.99 & 1.08 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_MU\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to \mu\mu$ & ATLAS\_ANA\_LL12\_Ztt\_bv & 1.15 & 0.85 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_ANA\_EMB\_ISOL\_2012 & 0.94 & 1.0 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_ANA\_EMB\_MFS\_2012 & 1.03 & 0.96 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_EL\_RES & 0.98 & 1.03 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_EL\_SCALE & 1.02 & 0.99 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MUMS\_RES & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MU\_SCALE & 0.99 & 1.02 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MUID\_RES & 1.03 & 0.98 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MET\_RESOSOFT & 1.03 & 0.99 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MET\_SCALESOFT & 1.09 & 0.96 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_EL\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to e\mu$ & ATLAS\_MU\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_ANA\_EMB\_ISOL\_2012 & 0.76 & 1.0 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_ANA\_EMB\_MFS\_2012 & 1.13 & 0.99 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_EL\_RES & 1.02 & 0.99 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_EL\_SCALE & 1.01 & 1.0 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MUMS\_RES & 0.99 & 1.08 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MU\_SCALE & 1.06 & 0.95 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MUID\_RES & 1.04 & 0.98 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MET\_RESOSOFT & 0.97 & 1.07 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MET\_SCALESOFT & 1.04 & 0.98 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_EL\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+$Z\to\tau\tau\to \mu e$ & ATLAS\_MU\_EFF\_2012\_Emb & 1.01 & 0.99 \\ 
+
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for background samples.}
+  \label{tab:systematics_np_ll2}
+  \end{center}
+\end{table}
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tll high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+Fake & ATLAS\_ANA\_LL12\_Fake\_bv & 1.2 & 0.8 \\ 
+$Z\to ll$ + Diboson & ATLAS\_EL\_SCALE & 0.97 & 1.0 \\ 
+$Z\to ll$ + Diboson & ATLAS\_EL\_RES & 1.0 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MUMS\_RES & 0.97 & 1.0 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MU\_SCALE & 0.97 & 1.07 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MUID\_RES & 1.01 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JER & 1.22 & 0.78 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JVF\_2012 & 1.0 & 0.98 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Statistical1 & 1.01 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Statistical2 & 1.05 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Statistical3 & 0.99 & 1.01 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Modelling1 & 1.08 & 0.83 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Modelling2 & 1.03 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Modelling3 & 0.96 & 1.06 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Modelling4 & 1.0 & 0.98 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Detector1 & 1.03 & 0.95 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Detector2 & 0.98 & 1.06 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Detector3 & 0.99 & 1.05 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Mixed1 & 1.01 & 1.0 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Mixed2 & 1.03 & 0.98 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_Eta\_Modelling\_LL & 1.29 & 0.79 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_Eta\_StatMethod & 1.05 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_Mu & 1.02 & 0.95 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_NPV & 1.01 & 0.9 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_PilePt & 0.97 & 1.04 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_2012\_PileRho\_TAU\_QG & 1.01 & 0.95 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_FlavComp\_TAU\_G & 1.1 & 0.77 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_FlavResp & 1.07 & 0.83 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MET\_RESOSOFT & 0.9 & 1.04 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MET\_SCALESOFT & 0.96 & 1.01 \\ 
+$Z\to ll$ + Diboson & ATLAS\_JES\_Flavb & 1.0 & 1.01 \\ 
+$Z\to ll$ + Diboson & ATLAS\_TRIG\_LL12\_SF & 1.01 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_MU\_EFF\_2012 & 1.01 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_ANA\_LL12\_Zll\_vbf\_DETAJJ & 1.11 & 0.89 \\ 
+$Z\to ll$ + Diboson & pdf\_qq & 1.04 & 0.96 \\ 
+$Z\to ll$ + Diboson & QCDscale\_VV & 1.01 & 0.99 \\ 
+$Z\to ll$ + Diboson & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+$Z\to ll$ + Diboson & ATLAS\_ANA\_LL12\_Zll\_vbf & 1.06 & 0.94 \\ 
+$Z\to ll$ + Diboson & ATLAS\_BCH\_LL12\_bv & 1.0 & 1.0 \\ 
+
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for background samples.}
+  \label{tab:systematics_np_ll3}
+  \end{center}
+\end{table}
+
+
+\begin{table}[h!]
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    \multicolumn{4}{|c|}{\tll high BDT signal region} \\
+    \hline
+    \multicolumn{4}{|c|}{signal}  \\
+    \hline\hline
+    Sample  & Nusiance parameter & up & down \\
+    \hline
+
+Top & ATLAS\_EL\_SCALE & 0.91 & 1.04 \\ 
+Top & ATLAS\_EL\_RES & 0.88 & 1.0 \\ 
+Top & ATLAS\_MUMS\_RES & 1.1 & 0.97 \\ 
+Top & ATLAS\_MU\_SCALE & 0.7 & 1.06 \\ 
+Top & ATLAS\_MUID\_RES & 0.93 & 1.01 \\ 
+Top & ATLAS\_JER & 1.03 & 0.97 \\ 
+Top & ATLAS\_JVF\_2012 & 1.08 & 1.0 \\ 
+Top & ATLAS\_JES\_2012\_Statistical1 & 1.02 & 0.96 \\ 
+Top & ATLAS\_JES\_2012\_Statistical2 & 1.07 & 0.88 \\ 
+Top & ATLAS\_JES\_2012\_Statistical3 & 0.89 & 1.1 \\ 
+Top & ATLAS\_JES\_2012\_Modelling1 & 0.93 & 1.06 \\ 
+Top & ATLAS\_JES\_2012\_Modelling2 & 1.09 & 0.98 \\ 
+Top & ATLAS\_JES\_2012\_Modelling3 & 0.94 & 1.06 \\ 
+Top & ATLAS\_JES\_2012\_Modelling4 & 0.88 & 1.07 \\ 
+Top & ATLAS\_JES\_2012\_Detector1 & 1.18 & 0.79 \\ 
+Top & ATLAS\_JES\_2012\_Detector2 & 0.74 & 1.03 \\ 
+Top & ATLAS\_JES\_2012\_Detector3 & 1.01 & 0.93 \\ 
+Top & ATLAS\_JES\_2012\_Mixed1 & 1.08 & 0.83 \\ 
+Top & ATLAS\_JES\_2012\_Mixed2 & 1.13 & 0.84 \\ 
+Top & ATLAS\_JES\_Eta\_Modelling\_LL & 0.78 & 1.07 \\ 
+Top & ATLAS\_JES\_2012\_Eta\_StatMethod & 0.86 & 1.03 \\ 
+Top & ATLAS\_JES\_Mu & 1.19 & 0.99 \\ 
+Top & ATLAS\_JES\_NPV & 0.9 & 1.04 \\ 
+Top & ATLAS\_JES\_2012\_PilePt & 1.02 & 0.96 \\ 
+Top & ATLAS\_JES\_2012\_PileRho\_TAU\_QG & 0.9 & 1.1 \\ 
+Top & ATLAS\_JES\_FlavComp\_TAU\_G & 1.01 & 0.89 \\ 
+Top & ATLAS\_JES\_FlavResp & 1.01 & 0.87 \\ 
+Top & ATLAS\_MET\_RESOSOFT & 0.93 & 1.06 \\ 
+Top & ATLAS\_MET\_SCALESOFT & 0.81 & 1.01 \\ 
+Top & ATLAS\_JES\_Flavb & 1.08 & 0.8 \\ 
+Top & ATLAS\_TRIG\_LL12\_SF & 1.01 & 0.99 \\ 
+Top & ATLAS\_EL\_EFF\_2012 & 1.01 & 0.99 \\ 
+Top & ATLAS\_MU\_EFF\_2012 & 1.01 & 0.99 \\ 
+Top & ATLAS\_BTag\_B9\_2012 & 0.99 & 1.01 \\ 
+Top & ATLAS\_BTag\_B10\_2012 & 1.07 & 0.93 \\ 
+Top & pdf\_gg & 1.08 & 0.92 \\ 
+Top & ATLAS\_LUMI\_2012 & 1.03 & 0.97 \\ 
+Top & ATLAS\_ANA\_LL12\_Top\_vbf & 1.06 & 0.94 \\ 
+Top & ATLAS\_BCH\_LL12\_bv & 1.0 & 1.0 \\ 
+
+
+   \hline
+  \end{tabular}
+  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for background samples.}
+  \label{tab:systematics_np_ll4}
+  \end{center}
+\end{table}
+
+
+%\begin{table}[h!]
+%  \begin{center}
+%  \begin{tabular}{|c|c|c|c|}
+%    \hline%
+
+%    \multicolumn{4}{|c|}{\tlhad high BDT signal region} \\
+%    \hline
+%    \multicolumn{4}{|c|}{signal}  \\
+%    \hline\hline
+%    Sample  & Nusiance parameter & up & down \\
+%    \hline
+
+
+
+%   \hline
+%  \end{tabular}
+%  \caption{Nuisance parameters, which reflect systematic normalization uncertainties, for the \tll channel in high BDT signal region for background samples.}
+%  \label{tab:systematics_np_ll0}
+%  \end{center}
+%\end{table}
+
+
+
+\clearpage

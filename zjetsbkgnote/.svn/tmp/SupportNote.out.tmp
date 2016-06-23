@@ -1,0 +1,40 @@
+<<<<<<< .mine
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Theoretical Overview}{}
+\BOOKMARK [1][-]{section.3}{The Optimal Observable}{}
+\BOOKMARK [1][-]{section.4}{Datasets}{}
+\BOOKMARK [2][-]{subsection.4.1}{Data}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Monte Carlo Simulated Samples}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{Signal Reweighting Procedure}{section.4}
+\BOOKMARK [1][-]{section.5}{Analysis Description}{}
+\BOOKMARK [2][-]{subsection.5.1}{The \040 channel}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{The \040had \040channel}{section.5}
+\BOOKMARK [1][-]{section.6}{Systematic Uncertainties}{}
+\BOOKMARK [1][-]{section.7}{Fitting Procedure}{}
+\BOOKMARK [1][-]{section.8}{Results}{}
+\BOOKMARK [1][-]{section.9}{Conclusions}{}
+\BOOKMARK [1][-]{appendix.A}{Control Region Inclusive Fit}{}
+\BOOKMARK [1][-]{appendix.B}{Signed Delta Phi}{}
+\BOOKMARK [1][-]{appendix.C}{Description of all-hadronic analysis}{}
+\BOOKMARK [1][-]{appendix.D}{Validation of signal sampel reweighting procedure}{}
+=======
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Theoretical Overview}{}% 2
+\BOOKMARK [1][-]{section.3}{The Optimal Observable}{}% 3
+\BOOKMARK [1][-]{section.4}{Datasets}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Data}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Monte Carlo Simulated Samples}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Signal Reweighting Procedure}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Analysis Description}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{The \040 channel}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{The \040had \040channel}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Systematic Uncertainties}{}% 11
+\BOOKMARK [1][-]{section.7}{Fitting Procedure}{}% 12
+\BOOKMARK [1][-]{section.8}{Results}{}% 13
+\BOOKMARK [1][-]{section.9}{Conclusions}{}% 14
+\BOOKMARK [1][-]{appendix.A}{Signal injection}{}% 15
+\BOOKMARK [1][-]{appendix.B}{Signed Delta Phi}{}% 16
+\BOOKMARK [1][-]{appendix.C}{Description of all-hadronic analysis}{}% 17
+\BOOKMARK [1][-]{appendix.D}{Validation of signal sample re-weighting procedure}{}% 18
+\BOOKMARK [1][-]{appendix.E}{Coupling analysis comparison}{}% 19
+>>>>>>> .r234945

@@ -1,0 +1,19 @@
+\section{Contribution from anomalous couplings in the $H\to W^+W^-$ decay}
+\label{app:hww}
+
+The number of signal events increases by approximately 20\%, when adding contributions from $(VBF)H\to W^+W^-$ to $(VBF)H\to\tau^+\tau^-$ in the fully leptonic final state. In contrast to processes, where the Higgs boson decays into two $\tau$ leptons, anomalous couplings might affect the decay vertex into two vector bosons as well. To disentangle anomalous couplings effects in the production and the decay, studies have been performed using a $(GGF)H\to W^+W^-$ sample. Figure~\ref{fig:hww_dphill} shows a comparison of $\Delta\phi(e,\mu)$, which is sensitive to anomalous couplings in the decay, in the fully leptonic decay channel for different \dtilde~scenarios, directly generated with \textsc{MG5}. In addition, the Standard Model sample has been re-weighted to $\dtilde\approx1.0$, based on leading order \textsc{MG5} matrix elements. The re-weighted sample matches the generated one, ensuring the validity of the re-weighting procedure, which is then used in the analysis to study anomalous couplings in the decay $H\to W^+W^-$. Overall, the impact of small \dtilde~admixtures on $\Delta\phi(e,\mu)$ is minor but increases towards very high \dtilde~values. 
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=0.49\textwidth]{figures/hww/comparison.eps}
+\caption{Comparison of $\Delta\phi(e,\mu)$ in the fully leptonic decay channel for different \dtilde~scenarios using $(GGF)H\to W^+W^-$ events. The samples are generated with \textsc{MG5}. The re-weighting is based on \textsc{MG5} as well and matches the directly generated sample for the corresponding \dtilde.}
+\label{fig:hww_dphill}
+\end{figure}
+
+To illustrate the effect of anomalous couplings in the decay $H\to W^+W^-$ on the Optimal Observable, figure~\ref{fig:hww_OptObsMMC} compares a pure Standard Model sample with a re-weighted Standard Model sample, where anomalous couplings are only introduced in the decay according to $\dtilde=0.5$ while the production vertex is left Standard Model-like. The differences in the Optimal Observable with respect to the re-weighted sample are small. Thus, the effect of anomalous couplings in the Higgs boson decay into two vector bosons is considered to be negligible and no additional re-weighting procedure with respect to the decay is applied in the nominal analysis for simplicity reasons.  
+
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=0.49\textwidth]{figures/hww/hww_OptObsMMC.eps}
+\caption{Comparison of the Optimal Observable in the fully leptonic decay channel for pure Standard Model and a re-weighted Standard Model $(VBF)H\to W^+W^-$ sample, where anomalous couplings are only introduced in the decay according to $\dtilde=0.5$. The production vertex is left Standard Model-like.}
+\label{fig:hww_OptObsMMC}
+\end{figure}

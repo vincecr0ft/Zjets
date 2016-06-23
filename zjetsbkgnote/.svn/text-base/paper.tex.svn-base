@@ -1,0 +1,42 @@
+\section{Coupling analysis comparison}
+\label{app:CouplingsAnalysisComparison}
+
+Different analysis frameworks are used for the CP VBF analysis and the couplings analysis~\cite{EvidencePaper} in \tll and \tlhad respectively. It is ensured, that both frameworks provide comparable and consistent results. Table~\ref{tab:paper_expectedyields} shows a comparison of the pre-fit expected event yields in the VBF region for the CP analysis and the couplings analysis framework. The numbers match within uncertainty. In addition, figure~\ref{fig:paper_leplep} shows a comparison of pre-fit BDT distributions in the VBF region for both frameworks. The shapes are in reasonable agreement. The small discrepancies in the \ggHtt contribution is due to different samples. The CP VBF analysis uses a MINLO sample for estimating \ggHtt, while POWHEG is used in the couplings analysis.   
+
+
+%\begin{table}[h!]                                                                                                                                                                                       
+\begin{sidewaystable}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      %\multirow{3}{*}{\tll}                                                                                                                                                                             
+              & \multicolumn{6}{c|}{VBF region}  \\ \hline
+      Process      & \tll            & \tll (couplings analysis)    & ratio  & \tlhad         & \tlhad (couplings analysis)    & ratio    \\ \hline \hline
+      Data         & $1014\pm 32$    & $1014\pm 32$    & 1.000  & $2830\pm53$     & $2830\pm53$       & 1.000   \\
+      \Ztt         & $601.2\pm 7.9$  & $603.3\pm 8.0$   & 0.996  & $894 \pm 16$    & $900\pm17$        & 0.993   \\
+      Fake bkg     & $60.8 \pm 4.1$  & $60.1\pm 3.7 $   & 1.011  & $1637 \pm 13$   & $1637\pm13$       & 1.000   \\
+      Top          & $142.7\pm 6.4$  & $144.\pm 6.4$   & 0.990  & $84.6 \pm 4.8$  & $84.6\pm4.8$      & 1.000   \\
+      \Zll         &        -        &       -         &   -    & $55.6 \pm 3.1$  & $55.6\pm3.1$      & 1.000   \\
+      Diboson      &        -        &       -         &   -    & $63.5 \pm 4.6$  & $63.5\pm4.6$      & 1.000   \\
+      \Zll+Diboson & $199.5\pm 10.0$ & $199.6\pm 10,0$ & 0.999  &   -             &      -            &   -     \\
+      \HWW+\VHtt   & $6.82 \pm 0.2$  & $6.84\pm 0.2$   & 0.997  & $0.35 \pm0.03$  & $0.35\pm0.03$     & 1.000   \\
+      \ggHtt       & $7.11 \pm 0.15$ & $7.36 \pm 0.17$ & 0.966  & $12.1 \pm 0.6$  & $12.1\pm0.5$      & 1.000   \\ \hline
+      Total bkg    & $1018.1\pm 14.8$& $1021.3\pm 14.8$& 0.997  & $2747.0\pm22.3$ & $2753.1\pm22.9$   & 0.998   \\ \hline
+      \VBFHtt      & $9.44 \pm 0.05$ & $9.46 \pm 0.05$ & 0.998  & $21.8 \pm 0.2$  & $21.8\pm0.2$      & 1.000   \\ \hline
+    \end{tabular}
+    \caption{Expected pre-fit event yields in VBF region in comparison to the event yields from the couplings analysis~\cite{EvidencePaper} for \tll and \tlhad channel.}
+    \label{tab:paper_expectedyields}
+  \end{center}
+\end{sidewaystable}
+%\end{table}                                                                                                                                                                                             
+
+
+
+%\begin{figure}[h!]
+\begin{sidewaysfigure}
+ \centering
+  \includegraphics[width=0.8\textwidth]{figures/leplep/Compare_cp_vs_paper_leplep.eps}
+     \caption{Pre-fit BDT distributions in VBF region (black) for each sub-sample, which is used in the fit, compared to the distributions from the couplings analysis~\cite{EvidencePaper} (red) for the \tll channel.}
+  \label{fig:paper_leplep}
+\end{sidewaysfigure}
+%\end{figure}

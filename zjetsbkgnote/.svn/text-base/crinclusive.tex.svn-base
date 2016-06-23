@@ -1,0 +1,34 @@
+\section{Control Region Inclusive Fit}
+\label{app:Control Region Inclusive Fit}
+
+This section provides preliminary results for \tll only fit, combining the signal region and control regions: low BDT, top and \Zll enriched regions. Figure~\ref{fig:plot_leplep_oo_postfit} shows post-fit distributions for \oo in signal and control regions for a $\dtilde=0$ signal model. Asimov data, including $1.4\times\sigma$ Standard Model VBF signal, is used in the signal region and real data in the control regions. The combined fit results at $\dtilde=0$ in a best-fit $\hat{\mu}=1.44$. The NLL curve of the inclusive fit is compared to signal region only fit and and alternative \signdphi approach in figure \ref{fig:plot_leplep_crinclusive_nll}. The correlation matrix and all pulls and constraints of nuisance parameters, including normalization factors of top, \Zll and \Ztt backgrounds, which are consistent with unity within uncertainties, are shown in figure \ref{fig:plot_leplep_crinclusive_pulls}. 
+
+
+
+\begin{figure}[htbp]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.6\textwidth]{figures/leplep/comb_highbdt.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.6\textwidth]{figures/leplep/comb_lowbdt.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.5\textwidth]{figures/leplep/comb_top.eps}  }
+   \subfloat[]{    \includegraphics[width=0.5\textwidth]{figures/leplep/comb_zll.eps}  }
+   \caption{Post-fit distributions of \oo in signal region (a), \bdtscore in low BDT region (b) and single bin control regions for top (c) and \Zll (d), which are used in the combined fit of \tll only.}
+  \label{fig:plot_leplep_oo_postfit}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/leplep/comparison_090515_Basic1JetAddNoBtag_OptObsMMC_Comb.eps}  
+   \caption{Comparison of the combined fit, including control regions, the signal region only fit and the alternative \signdphi approach, in the \tll channel.}
+  \label{fig:plot_leplep_crinclusive_nll}
+\end{figure}
+
+\begin{sidewaysfigure}[h!]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/leplep/pulls.eps}  
+   \caption{Correlation matrix (a) and pulls and constraints of nuisance parameters (b), testing signal model for $\dtilde=0$,  in the \tll channel.}
+  \label{fig:plot_leplep_crinclusive_pulls}
+\end{sidewaysfigure}
+
+

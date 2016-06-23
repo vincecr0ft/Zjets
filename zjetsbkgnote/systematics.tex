@@ -1,0 +1,28 @@
+\section{Generator Systematics}
+\label{sec:systematics}
+
+Sherpa v2.2.1 and MadGraph5\textunderscore aMC@NLO are able to produce scale variations to account for errors in modelling the V+jets process. 
+
+A global 5\% uncertainty should be assigned on the total W/Z inclusive cross section. The prescription to estimate the uncertainties on the shapes requires the usage of alternative samples with the following variations:
+
+\begin{itemize}
+\item Renormalization scale variations: x 2 and x 1/2
+\item Factorization scale variations: x 2 and x 1/2
+\item Resummation scale variations: x 2 and x 1/2
+\item CKKW matching scale variations: nominal 20 GeV, variations setting it at 15 GeV and 30 GeV 
+
+\end{itemize}
+
+A similar prescription holds for MadGraph5\textunderscore aMC@NLO; a global 5\% uncertainty should be assigned on the total W/Z inclusive cross section and the relevant parameters to be varied are:
+\begin{itemize}
+\item scalefact: value used for the variation of the factorization and renormalization scale: x 2 and 1/2
+\item kTdurham (in MG and Py8): nominal 30 GeV - variations could be 20 GeV and 50 GeV 
+\end{itemize}
+
+The samples are produced for Sherpa v2.1.1 at EVGEN only, so truth codes must be used to estimate the uncertainties with respect to the truth-nominal. Each set of samples is normalized to the same cross section (to avoid double counting). The variations should be evaluated independently and added in quadrature.
+
+Because of the large statistics of the samples (364M per lepton flavor for W, Z and Z to neutrinos), only 3 sets have been produced: Z->nunu+jets, W->enu+jets, Z->ee+jets. K-factors and cross-sections relevant for V+jets samples are collected centrally.
+
+The recommendation for the uncertainty estimate for the V+jets samples is to take half the difference between the up and down variation (relative to the midway point). Individual contributions should be added up in quadrature for the various sources of scale uncertainty considered. The relative uncertainty can be directly applied to the Sherpa v2.1.1 nominal prediction as well as the Sherpa v2.2.1 nominal prediction (the formal accuracy being identical). 
+
+Because the Sherpa 2.1 nominal prediction needs a smoothing correction, the systematic variations cannot be compared to the nominal. Instead we recommend to evaluate the systematic uncertainties with respect to the midway point between the up and down variation, thereby symmetrizing the uncertainty. 

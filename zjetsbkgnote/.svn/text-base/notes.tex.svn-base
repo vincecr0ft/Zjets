@@ -1,0 +1,85 @@
+\section*{Notes to the Reader}
+
+%\emph{Minor updates to the results presented in this note (version 0.5.2) are in preparation, to be shown at the Higgs approval meeting. The updates are due to a missing background sample (low mass Z*/$\gamma$) in the semi-leptonic channel and some very minor issues in those workspaces discovered and fixed at the same time. The effect of these fixes is small, and mainly for high d-tilde values.}\footnote{A comparison of the result for new and old workspaces can be found here: 
+%
+%https://indico.cern.ch/event/459444/attachments/1180387/1708560/combination-2.eps}
+
+This analysis follows very closely the \Htt\ couplings analysis. We have tried to minimise duplication/repetition of material, and instead throughout this note refer to the documentation of that analysis -- where relevant pointing the reader to specific sections/tables/figures.
+
+The analysis presently includes the semi-leptonic and di-leptonic channels of the  \Htt\  analysis. The fully-hadronic channel is currently being worked on, however it is not at the same level of maturity, and thus not included in the main text at the moment. Rather, an appendix has been added, describing its status.
+
+\subsection*{Version 0.6}
+
+Changes with respect to the previous version:
+\begin{itemize}
+\item Updated all results with fixed workspaces.
+\item Added appendix discussing DeltaNLL behavior.  
+\item Added appendix with description of VBF scale uncertainties checks.
+\end{itemize}
+
+\subsection*{Version 0.5}
+
+Changes with respect to the previous version:
+\begin{itemize}
+\item Included unblinded results for \tll\ and \tlhad.
+\item Description of theoretical uncertainties estimation added.
+\item Conclusions have been added.
+\item Added list of contributors.
+\item Updated results section (in version 0.5.2).
+\item Added mean value in data of OO in the SRs (in version 0.5.2).
+\end{itemize}
+
+\subsection*{Version 0.4}
+
+Changes with respect to the previous version:
+\begin{itemize}
+\item Updates to reflect modified definition/binning of low-BDT control region.
+\item Updated/rewrote the sections on Theory and Optimal Observable, now including references.
+\item Updated all the plots in the reweighting validation section to \dtilde=\dtildeB=0.1 model, incluing NLO closure test.
+\end{itemize}
+
+\subsection*{Version 0.3}
+
+Changes with respect to the previous version:
+\begin{itemize}
+\item Fit results updated to include all the CR for both \tll and \tlhad channels
+\item Add tables and plots showing systematic uncertainties included in the fit
+\item Update lephad plots showing \oo vs. BDT score, and add \oo plots showing impact of replacing reco variables with truth
+\item Add more details about BDT cut, and OO range and binning optimisation for lephad and leplep
+\item Add appendix \ref{app:signalinjectioni}, that shows the $\Delta$NLL curve for a CP-mixed Asimov dataset
+\item Add appendix \ref{app:hadhad}, containing the first description of the hadhad channel
+\item Add appendix \ref{app:reweight} with first validation studies of the signal sample re-weighting procedure
+\item Add appendix \ref{app:CouplingsAnalysisComparison} showing comparison of the pre-fit yields for this analysis and the coupling paper one
+\end{itemize}
+
+\subsection*{Version 0.2}
+
+Changes with respect to the previous version:
+\begin{itemize}
+\item Theory section significantly expanded.
+\item Section 4.3 updated to reflect the new signal reweighting procedure.
+\item All results and plots for leplep updated with the new optimal observable calculation and reweighting, assuming $\tilde{d}=\tilde{d}_B$
+\item All results and plots for lephad updated with the new optimal observable calculation and reweighting, assuming $\tilde{d}=\tilde{d}_B$
+\item A combination of the two channels including some but not all systematics has been performed. Asimov data has been used and no control regions included at this stage.The treatment of correlations of NPs between the two channels is still under work.
+\item Investigation of the fit behaviour when using ``hybrid'' data (i.e. Asimov in the signal region and real data in the control regions) has been added in the new Appendix A. So far this is for leplep.
+\item Expected sensitivity when using the variable  \signdphi instead of the OO, in the new Appendix B.  So far this is for leplep.
+\end{itemize}
+
+Caveat: the leplep channel accidentally uses a slightly different version of the reweighting- and OO-calculating code compared to lephad. This amounts to $<0.1\%$ of signal-events in leplep getting a negative weight (and being discarded); also the assumed parameter \verb#a3haa# when calculating the ME for the OO (but not for the reweighting) was set to 0 (as opposed to $2/[\sin(\theta_w)*m_w]$). For "final" results before any unblinding decision we will of course provide updated leplep results with the latest reweighting/OO-calculation.
+
+
+\subsection*{Version 0.1}
+
+We consider that the note represents well the current status of the analysis, so for most sections we do not anticipate substantial changes to the text/content already in place; however the reader should be aware of some points:
+\begin{itemize}
+\item The Theoretical Overview and Optimal Observable sections and the subsection on the signal reweighting procedure will likely be further expanded/improved in future versions.
+\item The Systematics section, currently very frugal, will be substantially expanded to include more quantitative information on the effects of the various systematics on the signal region yields/shapes.
+\item The Results section is as mature as it can be at the moment, and contains the latest blinded Asimov expected results, with caveats described in the text. Obviously this will be updated as the analysis progresses and the caveats taken care of.  
+\item The Conclusions section will be written when the final expected sensitivity is available.
+\end{itemize}
+
+
+
+\subsection*{Version 0.0}
+
+Only an outline of the proposed structure of the note, as well as the abstract and introduction. 

@@ -1,0 +1,98 @@
+\section{Scale uncertainties on VBF}
+\label{app:scalevbf}
+
+\paragraph{Procedure}
+A normalisation and shape uncertainty due to choice of certain values for the renormalisation and factorisation scales $\mu_R$ and $\mu_F$ is evaluated by varying both scales around the nominal value of $\mu_R=\mu_F = m_W$.
+Both scales are varied separately by  factors of $0.5$ and $2.0$ with the constraint
+\[
+\frac{1}{2} \leq \frac{\mu_F}{\mu_R} \leq 2.
+\]
+The influence of this variation on the fiducial cross sections as well as differential cross sections in dependence on the optimal observable as well as \signdphi\ is evaluated in three VBF-like phase spaces, corresponding to those used for the evaluation of the scale uncertainty in the context of the couplings analysis.
+These phase spaces are defined as follows:
+\begin{itemize}
+\item ``LepLep'': $\pT(j1) > 40$\,GeV, $\pT(j2) > 30$\,GeV, $|\Delta \eta| > 2.2$
+\item ``LepHad'': $\pT(j1) > 50$\,GeV, $ \pT(j2) > 30$\,GeV, $|\Delta \eta| > 3.0$, $ M(\tau \tau)> 40$\,GeV
+\item ``HadHad'': $\pT(j1) > 50$\,GeV, $ \pT(j2) > 30$\,GeV, $|\Delta \eta| > 2.0$,     $\pT^H > 40$\,GeV
+\end{itemize}
+
+Event samples with scale variations are produced with MadGraph5\_aMCatNLO for Higgs production via VBF at NLO-QCD, excluding Higgs-strahlung diagrams.
+Events are showered with Pythia8 and matched between LO+Parton Shower and NLO.
+
+
+
+
+
+\paragraph{Normalisation uncertainty}
+The fiducial cross sections resulting in the three phase spaces defined above are presented in Tables~\ref{tab:LepLep-scalevar-SM} to \ref{tab:HadHad-scalevar-SM}.
+The nominal sample with $\mu_R=\mu_F = m_W$ is taken as the central value, while the variation factors are given as $\xi_F = \mu_F/ m_W$ and $\xi_R = \mu_R/ m_W$.
+\begin{table}[ht]
+  \centering
+\begin{tabular}[ht]{|l|l||c|c|c|}\hline
+  $\xi_F$ &$\xi_R$ & $\sigma$ [pb] & rel. error in \%& deviation from (1.0,1.0) in \%\\ \hline
+   1.0 & 1.0 &  0.463 & 0.73 &              0. \\
+ \textbf{  0.5} & \textbf{0.5} &\textbf{ 0.455} & \textbf{ 0.72} & \textbf{     -1.66}\\
+   1.0 & 0.5 & 0.466 &  0.73  &      0.72\\
+   1.0 & 2.0 &  0.463 & 0.62  &    -0.014\\
+   2.0 & 2.0 & 0.4621 &  0.57  &     -0.29\\
+   \textbf{ 0.5}  & \textbf{ 1.0 } & \textbf{ 0.469 } & \textbf{  0.64  } & \textbf{       1.33}\\
+   2.0 & 1.0 & 0.456 & 0.60  &      -1.51\\
+\hline
+\end{tabular}
+\caption{Fiducial cross sections for the SM case in the LepLep phase space. The maximum negative and positive deviations are printed in bold.}
+\label{tab:LepLep-scalevar-SM}
+\end{table}
+
+
+\begin{table}[ht]
+  \centering
+\begin{tabular}[ht]{|l|l||c|c|c|}\hline
+  $\xi_F$ &$\xi_R$ & $\sigma$ [pb] & rel. error in \%& deviation from (1.0,1.0) in \%\\ \hline
+  1.0 & 1.0 &  0.350 & 0.73  &              0. \\
+   0.5 & 0.5 &  0.345 &  0.72  &      -1.5\\
+   1.0 & 0.5 &  0.353 & 0.73   &      0.75\\
+   1.0 & 2.0 & 0.350 &  0.62  &     0.064\\
+   2.0 & 2.0 &  0.347 &  0.57 &     -0.89\\
+\textbf{   0.5 } & \textbf{ 1.0 } & \textbf{ 0.360 } & \textbf{  0.64  } & \textbf{       2.86}\\
+\textbf{   2.0 } & \textbf{ 1.0 } & \textbf{  0.341 } & \textbf{ 0.60  } & \textbf{      -2.4}\\
+\hline
+\end{tabular}
+\caption{Fiducial cross sections for the SM case in the LepHad phase space. The maximum negative and positive deviations are printed in bold.}
+\label{tab:LepHad-scalevar-SM}
+\end{table}
+
+\begin{table}[ht]
+  \centering
+\begin{tabular}[ht]{|l|l||c|c|c|}\hline
+  $\xi_F$ &$\xi_R$ & $\sigma$ [pb]  & rel. error in \%& deviation from (1.0,1.0) in \%\\ \hline
+ 1.0 & 1.0 & 0.385 & 0.73  &              0. \\
+   0.5 & 0.5 & 0.379 &0.72  &      -1.5\\
+   1.0 & 0.5 & 0.384 & 0.73 & 0.47 \\
+   1.0 & 2.0 & 0.385 & 0.62  &  -0.10\\
+   2.0 & 2.0 & 0.383 &  0.57 &-0.54\\
+\textbf{   0.5 } & \textbf{ 1.0 } & \textbf{ 0.393} & \textbf{  0.64  } & \textbf{ 1.83}\\
+\textbf{   2.0 } & \textbf{ 1.0 } & \textbf{ 0.378} & \textbf{ 0.60  } & \textbf{  -1.81}\\
+\hline
+\end{tabular}
+\caption{Fiducial cross sections for the SM case in the HadHad phase space. The maximum negative and positive deviations are printed in bold.}
+\label{tab:HadHad-scalevar-SM}
+\end{table}
+
+Taking into account the uncertainties of the Monte Carlo prediction, these deviations are compatible with those found in a previous study for the couplings analysis~\cite{HtautauSupport}.
+%ATL-COM-PHYS-2014-170
+Hence, for the normalisation uncertainty on the VBF process, the uncertainties of 2.5\,\% (LepLep), 2.1\,\% (LepHad), and 2.0\,\% (HadHad) are used also in this analysis.
+
+As a cross-check, the fiducial uncertainties are also evaluated for the case of non-SM \dtilde.
+For this, the SM sample is reweighted to \dtilde=0.1 according to the standard reweighting procedure described in Section~\ref{subsec:reweight}.
+Uncertainties arising from scale variation with \dtilde=0.1 are found to be consistent with the uncertainties in the SM case.
+
+
+\paragraph{Shape uncertainty}
+The influence of the scale choice on the shape of the optimal observable and on \signdphi were investigated as well for the SM case in all three phase spaces defined above.
+The resulting fluctuations have been found to be negligible.
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

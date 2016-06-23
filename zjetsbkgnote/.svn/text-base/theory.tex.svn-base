@@ -1,0 +1,222 @@
+\section{Theoretical Overview}
+\label{sec:theory}
+
+%%%% ELIAS: I am replacing the old theory section, with the one from the paper, that has references.
+
+
+The effective Lagrangian considered is the SM Langrangian extended by CP-violating operators of mass dimension six,
+which can be constructed from the Higgs doublet $\Phi$ and the $U(1)_Y$ and $SU(2)$ electro-weak gauge fields 
+$B^\mu$ and $W^{a,\mu}$ ($a$ = 1,2,3) respectively. No CP-conserving dimensions six operators built from 
+these fields are taken into account.  All interactions between the Higgs boson and other SM particles (fermions and gluons) are 
+assumed as predicted in the SM;  i.e. the coupling structure in gluon fusion production
+ and in the decay into a pair of $\tau$ leptons is considered to be SM-like. 
+
+The effective $U(1)_Y$ and $SU(2)$ invariant Lagrangian is then given by 
+(following Ref.~\cite{Buchmuller:1985jz,Hankele:2006ma}):
+\begin{equation}\label{eq:Leff}
+{\cal L}_{eff} = {\cal L}_{SM} + \frac{f_{\tilde{B}B}}{\Lambda^2}{\cal O}_{\tilde{B}B} 
+                              + \frac{f_{\tilde{W}W}}{\Lambda^2}{\cal O}_{\tilde{W}W} 
+                              + \frac{f_{\tilde{B}}}{\Lambda^2}{\cal O}_{\tilde{B}}
+\end{equation}
+with the three dimension six operators
+\begin{equation}
+{\cal O}_{\tilde{B}B} = \Phi^+ \hat{\tilde{B}}_{\mu\nu}  \hat{B}^{\mu\nu} \Phi ~~~~~~
+{\cal O}_{\tilde{W}W} = \Phi^+ \hat{\tilde{W}}_{\mu\nu}  \hat{W}^{\mu\nu} \Phi ~~~~~~ 
+{\cal O}_{\tilde{B}}  =  (D_\mu \Phi)^+ \hat{\tilde{B}}^{\mu\nu} D_\nu \Phi ~~~~~~.
+\end{equation}
+Here $D_\mu$ denotes thee covariant derivative $D_\mu = \partial_\mu +\frac{i}{2}g^\prime B_\mu 
++ i g \frac{\sigma_a}{2}  W_\mu^a \sigma_a$,
+$\hat{V}_{\mu\nu}$  ($V = B, W^a$) the field strength tensors and  
+$\tilde{V}_{\mu\nu} = \frac{1}{2} \epsilon_{\mu \nu \rho \sigma}{V}^{\rho\sigma}$
+the dual field strength tensors, with 
+$\hat{B}_{\mu\nu} + \hat{W}_{\mu\nu} = i \frac{g^\prime}{2} B_{\mu\nu} + i \frac{g}{2} \sigma^a W^a_{\mu\nu}$.
+
+The last operator ${\cal O}_{\tilde{B}}$ contributes to the CP-violating charged triple gauge couplings 
+$\tilde{\kappa}_{\gamma}$  ($\tilde{\kappa}_{Z}$) via the relation 
+$\tilde{\kappa}_{\gamma} = \cot^2 \theta_W \tilde{\kappa}_{Z} = -\frac{m_W^2}{2\Lambda^2} f_{\tilde{B}}$.  
+These CP-violating charged triple gauge couplings have been constrained by the 
+ALEPH~\cite{Schael:2004tq} and OPAL~\cite{Abbiendi:2000ei} experiments and the contribution from 
+${\cal O}_{\tilde{B}}$ is neglected in the following i.e. only 
+contributions from  ${\cal O}_{\tilde{B}B}$ and ${\cal O}_{\tilde{W}W}$ are taken into account.
+
+After electroweak symmetry breaking in the unitary gauge the effective Lagrangian in the mass basis of 
+Higgs boson $H$, photon $A$ and Z boson $Z$ can be written as e.g in Ref.~\cite{Achard:2004kn}:
+\begin{equation}\label{eq:Leff_MG5}
+{\cal L}_{eff} = {\cal L}_{SM} + \tilde{g}_{HAA} \tilde{A}_{\mu\nu}{A}^{\mu\nu} +
+                \tilde{g}_{HAZ} \tilde{A}_{\mu\nu}{Z}^{\mu\nu} +
+                \tilde{g}_{HZZ} \tilde{Z}_{\mu\nu}{Z}^{\mu\nu} +
+                \tilde{g}_{HWW} \tilde{W}^+_{\mu\nu}{W}_-^{\mu\nu} \, . 
+\end{equation}
+Only two of the four couplings $\tilde{g}_i$ are independent due to contraints imposed by
+$U(1)_Y$ x $SU(2)$ invariance. They can be can be expressed in terms of two dimensionless couplings 
+$\tilde{d}$ and $\tilde{d}_B$ as:
+\begin{eqnarray}\label{eq:translations}
+\tilde{g}_{HAA}  =   \frac{g}{2 m_W} (\tilde{d} \sin^2 \theta_W + \tilde{d}_B \cos^2 \theta_W) & & 
+\tilde{g}_{HAZ}  =   \frac{g}{2 m_W} \sin 2\theta_W (\tilde{d} -\tilde{d}_B)\\
+\tilde{g}_{HZZ}  =  \frac{g}{2 m_W} (\tilde{d} \cos^2 \theta_W + \tilde{d}_B \sin^2 \theta_W) & & 
+\tilde{g}_{HWW}  =   \frac{g}{m_W} \tilde{d} \, .
+\end{eqnarray}
+Hence in general $WW$, $ZZ$, $Z\gamma$ and $\gamma\gamma$ fusion contribute to VBF production.
+The relations between $\tilde{d}$ and $f_{\tilde{B}B}$, and $\tilde{d}_B$ and $f_{\tilde{W}W}$ are given by:
+\begin{equation}
+\tilde{d}   = - \frac{m_W^2}{\Lambda^2}                 f_{\tilde{W}W} ~~~~~~~~~~~~  
+\tilde{d}_B = - \frac{m_W^2}{\Lambda^2} \tan^2 \theta_W  f_{\tilde{B}B} \, .
+\end{equation}
+As the different contribution from the various electroweak gauge boson fusion procoesses can 
+not be distinuguished experimentally the arbitrary choice $\dtilde = \dtildeB$ is adopted.
+This yields the following relation for the $\tilde{g}_i$:
+\begin{equation}
+\tilde{g}_{HAA} = \tilde{g}_{HZZ} = \frac{1}{2} \tilde{g}_{HWW} = \frac{g}{2 m_W} \tilde{d}~~~~   
+{\mathrm{and}} ~~~~~~ \tilde{g}_{HAZ} = 0 \, .
+\end{equation}
+
+The parameter $\tilde{d}$ is related to the parameter $\hat{\kappa}_W$ used in the investigation
+of CP properties in the decay $H\rightarrow W^+W^-$~\cite{Aad:2015mxa}
+via $\tilde{d} = - \hat{\kappa}_W = \tilde{\kappa}_W/ \kappa_{SM} \tan \alpha$.
+The choice $\tilde{d} = \tilde{d}_B$ yields $\hat{\kappa}_W = \hat{\kappa}_Z$ 
+as assumed in the combination of the $H\rightarrow W^+W^-$ and $H\rightarrow ZZ$ decay 
+analysis~\cite{Aad:2015mxa}.
+
+%$\tilde{d} = - \hat{\kappa}_Z = - \hat{\kappa}_W = - \tilde{\kappa}_W/ \kappa_{SM} \tan \alpha$
+
+The effective Lagrangian yields the following Lorentz structure for each vertex of the Higgs
+bosons to two identical electroweak gauge bosons  $HV(p_1)V(p_2)$ vertex ($V=W,Z,\gamma)$), 
+with $p_{1,2}$ denoting the momenta of the gauge bosons:
+\begin{equation}
+ T^{\mu\nu} (p_1,p_2) = \sum_{V=W,Z} \frac{2m^{2}_{V}}{v} g^{\mu\nu} +  \sum_{V=W,Z,\gamma} 
+\frac{2g}{m_W} \tilde{d} ~ \varepsilon^{\mu \nu \rho \sigma} p_{1\rho} p_{2\sigma} \, .
+\end{equation}
+The first terms ($\propto g^{\mu\nu}$) are CP-even and describe the SM coupling structure;
+the second terms ($\propto \varepsilon^{\mu \nu \rho \sigma} p_{1\rho} p_{2\sigma}$) 
+are CP-odd and arise from the CP-odd dimension six operators. Note that the choice
+$\tilde{d} = \tilde{d}_B$ gives the same coefficents multiplying the CP-odd structure
+for $HWW$, $HZZ$ and $H\gamma\gamma$ vertices and a vanishing coupling for the $HZ\gamma$ vertex.
+
+The matrix element $\mathcal{M}$ for VBF production receives a CP-even contribution $\mathcal{M}_{\textrm{SM}}$
+from the SM and a CP-odd contribution $\mathcal{M}_{\textrm{CP-odd}}$ from the dimension six operators considered:
+\begin{equation} 
+\mathcal{M} =\mathcal{M}_{\textrm{SM}}+\dtilde\cdot\mathcal{M}_{\textrm{CP-odd}}.
+\end{equation}
+The differential cross section or squared matrix element has three contributions:
+\begin{equation} \label{eq:MEsquared}
+|\mathcal{M}|^{2}=|\mathcal{M}_{\textrm{SM}}|^{2}+ 
+\dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}}) +  \dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2} \, .
+\end{equation}
+The first $|\mathcal{M}|^{2}$ and third term 
+$\dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2}$ are both CP-even and hence do not yield a source 
+of CP violation. The second term 
+$\dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}})$, stemming from the interference of the 
+two contributions to the matrix element, is CP-odd and is a possible new source of CP-violation in the Higgs sector.
+The interference term integrated over a CP-symmetric part of phase space vanishes and does therefore 
+not contribute to the total cross section and observed event yield after applying CP-symmetric selection criteria.
+The third term leads to an increase of the total cross section quadratic in $\dtilde$, which is however not 
+exploited in the analysis presented here.
+
+
+%%The present study is investigating the tensor structure of the coupling of the Higgs boson to massive gauge bosons by investigating events produced through Vector Boson Fusion. 
+%The most general Lorentz invariant tensor structure of the coupling of the Higgs boson to massive gauge bosons can be written as:
+%
+%\begin{align*}
+%          T^{\mu\nu} (p_1,p_2) &= a_{1}(p_1,p_2)\; g^{\mu
+%\nu} \tag{SM: $CP$ even}\\ 
+%          &+ a_{2}(p_1,p_2)\; [ p_1 \cdot p_2 g^{\mu \nu} -
+%p_2^{\mu} p_1^{\nu} ]\tag{$CP$ even}\\
+%          &+ a_{3}(p_1,p_2)\;
+%\varepsilon^{\mu \nu \rho \sigma} p_{1\rho} p_{2\sigma}
+%\tag{$CP$ odd}
+%\end{align*}
+%with the $a_{i}$ being momentum dependent form factors and the $p_{i}$ denoting the momenta of the electroweak gauge bosons coupling to the Higgs boson.
+%In the Standard Model (SM)  $a_{1}=\frac{2m^{2}_{V}}{v}, a_{2}=0, a_{3}=0$ holds. The case of a CP-odd anomalous admixture to the dominant SM-like structure 
+%corresponds to $a_{1}=\frac{2m^{2}_{V}}{v}, a_{2}=0, a_{3}\neq0$. The case of a CP-even admixture beyond the Standard Model would instead have $a_{2}\neq0$, 
+%but is not considered further in the present study.
+%
+%In the context of effective field theory three CP-odd operators of mass dimension 6 can be formed from the Higgs doublet $\Phi$
+%and the $U(1)_Y$ and $SU(2)$ gauge field $B^\mu$ and $W^{a,\mu}$ (a = 1,2,3) respectively. The effective 
+%$U(1)_Y$ and $SU(2)$ invariant Lagrangian is then given by:
+%\begin{equation}\label{eq:Leff}
+%{\cal L}_{eff} = {\cal L}_{SM} + \frac{f_{\tilde{B}B}}{\Lambda^2}{\cal O}_{\tilde{B}B} 
+%                              + \frac{f_{\tilde{W}W}}{\Lambda^2}{\cal O}_{\tilde{W}W} 
+%                              + \frac{f_{\tilde{B}}}{\Lambda^2}{\cal O}_{\tilde{B}}
+%\end{equation}
+%with the dimension six operators
+%\begin{eqnarray}
+%{\cal O}_{\tilde{B}B} &=& \Phi^+ \hat{\tilde{B}}_{\mu\nu}  \hat{B}^{\mu\nu} \Phi  \\
+%{\cal O}_{\tilde{W}W} &=& \Phi^+ \hat{\tilde{W}}_{\mu\nu}  \hat{W}^{\mu\nu} \Phi  \\
+%{\cal O}_{\tilde{B}}  &=&  (D_\mu \Phi)^+ \hat{\tilde{B}}^{\mu\nu} D_\nu \Phi
+%\end{eqnarray}
+%and the covariant derivative $D_\mu$ and the field strength tensors and dual field strength tensors:
+%\begin{eqnarray}
+%D_\mu &=& \partial_\mu +\frac{i}{2}g^\prime B_\mu + i g W_\mu^a \\
+%\hat{B}_{\mu\nu} + \hat{W}_{\mu\nu} &=& i \frac{g^\prime}{2} B_{\mu\nu} + i \frac{g}{2} \sigma^a W^a_{\mu\nu} \\
+%\tilde{B}_{\mu\nu} &=& \frac{1}{2} \epsilon_{\mu \nu \rho \sigma}{B}^{\rho\sigma}\\
+% \tilde{W}^a_{\mu\nu} &=& \frac{1}{2} \epsilon_{\mu \nu \rho \sigma}{W}^{a,\rho\sigma}
+%\end{eqnarray}
+%The last operator ${\cal O}_{\tilde{B}}$ contributes to the 
+%CP-violating charged triple gauge couplings $\tilde{\kappa}_{\gamma}$ via the relation
+%\begin{equation}
+%\tilde{\kappa}_{\gamma} = -\frac{m_W^2}{2\Lambda^2} f_{\tilde{B}}\\
+%\end{equation}
+%and is neglected in the following.
+%
+%Considering the mass basis in terms of Higgs boson $H$, photon $A$ and Z boson $Z$ the 
+%additional terms in the effective Lagrangian can be written as:
+%\begin{equation}
+%{\cal L}_{eff} = {\cal L}_{SM} + \tilde{g}_{HAA} \tilde{A}_{\mu\nu}{A}^{\mu\nu} +
+%                \tilde{g}_{HAZ} \tilde{A}_{\mu\nu}{Z}^{\mu\nu} +
+%                \tilde{g}_{HZZ} \tilde{Z}_{\mu\nu}{Z}^{\mu\nu} +
+%                \tilde{g}_{HWW} \tilde{W}^+_{\mu\nu}{W}_-^{\mu\nu} 
+%\end{equation}
+%where the four couplings $\tilde{g}_i$ can be expressed in terms of two couplings 
+%$\tilde{d}$ and $\tilde{d}_B$ as
+%\begin{eqnarray}\label{eq:translations}
+%\tilde{g}_{HAA} & = &  \frac{g}{2 m_W} (\tilde{d} \sin^2 \theta_W + \tilde{d}_B \cos^2 \theta_W) \\
+%\tilde{g}_{HAZ} & = &  \frac{g}{2 m_W} \sin^2 2\theta_W (\tilde{d} -\tilde{d}_B)\\
+%\tilde{g}_{HZZ} & = & \frac{g}{2 m_W} (\tilde{d} \cos^2 \theta_W + \tilde{d}_B \sin^2 \theta_W) \\
+%\tilde{g}_{HWW} & = &  \frac{g}{m_W} \tilde{d}
+%\end{eqnarray}
+%and the relation between $\tilde{d}$, $\tilde{d}_B$, $f_{\tilde{B}B}$ and $f_{\tilde{W}W}$ are given by:
+%\begin{eqnarray}
+%\tilde{d}   &=& - \frac{m_W^2}{\Lambda^2}                 f_{\tilde{W}W} \\
+%\tilde{d}_B &=& - \frac{m_W^2}{\Lambda^2} \tan \theta^2_W  f_{\tilde{B}B}
+%\end{eqnarray}
+%
+%where $\tilde{d}=\tilde{d}_B=0$ recovers the Standard Model.  Choosing $\tilde{d} = \tilde{d}_B$ yields:
+%\begin{eqnarray}
+%\tilde{g}_{HAA} &=& \tilde{g}_{HZZ} = \frac{1}{2} \tilde{g}_{HWW} = \frac{g}{2 m_W} \tilde{d}  \\
+%\tilde{g}_{HAZ} &=& 0
+%\end{eqnarray}
+%and the same values for the $a_{3}$ in the tensor structure.
+%\begin{equation}
+%a_{3}^{HAA} = a_{3}^{HZZ} = a_{3}^{HWW} = \frac{2g}{m_W}\tilde{d}
+%\end{equation}
+%
+%$\tilde{d}$ is related to the fit parameter $\hat{\kappa}_W$ used in $H\rightarrow W^+W^-$ 
+%CP investigations~\cite{HWWCPsupportNote} via:
+%\begin{equation}
+%- \tilde{d} = \hat{\kappa}_W = \tilde{\kappa}_W/ \kappa_{SM} \tan \alpha
+%\end{equation}
+%
+%The choice $\tilde{d} = \tilde{d}_B$ yields $\hat{\kappa}_W = \hat{\kappa}_Z$ as 
+%used in the combination~\cite{HWWZZCPcombinationCONF} of the $H\rightarrow W^+W^-$ and $H\rightarrow ZZ$~\cite{HZZCPsupportNote} analysis.
+%
+%%The anomalous coupling, $a_{3}$, can be parametrised as follows, for the coupling to $Z$ and $W$ bosons respectively:
+%%\begin{align}
+%% \label{eq:a3HZZ} a_{3}^{HZZ} &= \frac{2e}{\sin\theta_{W}M_{W}}\dtilde\cos^{2}\theta_{W}\\
+%% \label{eq:a3HWW} a_{3}^{HWW} &= \frac{2e}{\sin\theta_{W}M_{W}}\dtilde,
+%%\end{align}
+%%meaning that a single parameter, $\dtilde$, can be used to express the anomalous CP-odd mixing in the coupling of the Higgs boson to vector bo%sons. A value of $\dtilde=0$ corresponds to no CP-odd contribution. %The results of the present study are expressed in terms of this parameter% \comment{Elias: We need here to either discuss/compare/translate this parametrisation to other parametrisations, such as HC, or to reference an appendix where this is done.}
+%
+%
+%
+%In terms of matrix elements, $\mathcal{M}$, one can write:
+%\begin{equation} \label{eq:MEs}
+%\mathcal{M}_{\textrm{non-SM}}=\mathcal{M}_{\textrm{SM}}+\dtilde\cdot\mathcal{M}_{\textrm{CP-odd}}.
+%\end{equation}
+%Taking the squared matrix element, one of course gets:
+%\begin{equation} \label{eq:MEsquared}
+%|\mathcal{M}_{\textrm{non-SM}}|^{2}=|\mathcal{M}_{\textrm{SM}}|^{2}+ \dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}}) +  \dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2}.
+%\end{equation}
+%It can be noted that the term $\dtilde^{2}\cdot|\mathcal{M}_{\textrm{CP-odd}}|^{2}$ is CP-even and thus does not contribute to CP violation, however it signifies a quadratic increase of the total cross section due to the CP-odd admixture. On the other hand, the term $ \dtilde\cdot2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}})$ is CP-odd and constitutes the source of CP violation in this description.
+%\\
+%
+%The present study is investigating the $HVV$ tensor structure by considering events produced through Vector Boson Fusion, measuring the value of $\dtilde$. In this context, throughout this study, the assumption is made that the couplings of the Higgs boson to fermions behave as in the Standard Model. As a consequence, no anomalous couplings are considered for Higgs events produced via the gluon-fusion production mode, which constitute a background to the VBF-produced signal events and are modelled assuming a fully SM-like behaviour.

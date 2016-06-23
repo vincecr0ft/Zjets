@@ -1,0 +1,97 @@
+\section{The Optimal Observable}
+\label{sec:oo}
+
+%%%%% ELIAS: Replacing parts of this with the text Markus wrote for the paper. I have here retained the description of OO2 however, and the subsequent discussion why we chose not to use it.
+
+Tests of CP-invariance can be performed in a completely model independent way by measuring the mean
+value of CP-odd observable $<\mathcal{O}_{\textrm{CP}} >$. If CP-invariance holds the mean values has 
+to vanish $<\mathcal{O}_{\textrm{CP}} > = 0$. An observation of a non-vanishing mean value is 
+a clear sign of CP-violation. A simple CP-odd observable for Higgs bsoson production in VBF, 
+the ``signed'' difference in the azimuthal angle  between the two tagging jets $\Delta \phi_{jj}$, 
+has been suggested in Ref.~\cite{Hankele:2006ma} and is formally defined as:
+\begin{equation} 
+\label{eq:signdphi}
+\epsilon_{\mu \nu \rho \sigma} b_+^\mu p_+^\nu  b_-^\rho p_-^\sigma 
+= 2 p^T_+ p^T_- \sin\Delta(\phi_+ - \phi_-) = 2 p^T_+ p^T_- \sin\Delta \phi_{jj} \, .  
+\end{equation}
+Here $b_+^\mu$ and $b_-^\mu$ denote the normalized four-momenta of the two proton beams
+and  $p_+^\mu$ and $p_-^\mu$ denote the four-momenta of the two tagging jets, where $p_+$
+($p_-$)  points into the same detector hemisphere as $b_+^\mu$ ($b_-^\mu$).
+This definition is invariant under the interchange
+$ (b_+, p_+) \leftrightarrow ( b_- , p_- )$ and $\Delta \phi_{j j }$ is a parity odd observable.  A measurement of $\dtilde$ can be performed either by comparing the mean value of $\Delta \phi_{jj}$ with the prediction for various $\dtilde$
+values or by a maximum likelihood fit to the full distribution of 
+$\Delta \phi_{jj}$. 
+
+The final state consisting of Higgs bososn and the two tagging jets can 
+be characterized by seven phase space variables assuming the mass of  
+the Higgs boson, neglecting jet masses and exploiting momentum conservation
+in the plane transverse to the peampipe. The concept of the 
+\emph{Optimal Observable} combines the information
+of the high-dimensional phasespace in a single observable, which can be 
+shown to have the highest sensitivty for small values of the parameter of 
+interest and neglecting the terms in the maxtrix element qudratic in it.
+The method was first suggested for the estimation of a single parameter 
+using the mean value only \cite{Atwood:1991ka} and via  
+a maximum likelihood fit to the full distribution \cite{Davier:1992nw}
+using teh so-called Optimal Observable of first order.
+The extension to several parameters and exploiting also the matrix element  
+contributions quadratic in the parameters by using in addition 
+Optimal Observable of second order was instroduced in 
+\cite{Diehl:1993br,Diehl:1997ft,Diehl:2002nj}. The technique has been applied in 
+various experimental analysis e.g. \cite{OOOPAL,Ackerstaff:1996gy,Schumacher:2001ax,Abbiendi:1998bg,Abbiendi:2000ej,Abbiendi:2003mk,Aad:2015mxa,}
+
+
+The Optimal Observables of first and second order are defined as follows as follows:
+\begin{align}
+\label{eq:OO1} \oo &:=\frac{2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}})}{|\mathcal{M}_{\textrm{SM}}|^{2}}, \\
+\label{eq:OO2} \ootwo &:=\frac{|\mathcal{M}_{\textrm{CP-odd}}|^{2}}{|\mathcal{M}_{\textrm{SM}}|^{2}}. 
+\end{align}
+The first order Optimal Observable, \oo, has a mean value of 0 if CP is conserved, whereas if CP is violated ($\dtilde\neq 0$) its mean value is shifted from zero in the positive or negative direction, depending on the sign of  $\dtilde$. Figure~\ref{fig:ooGenLevel} shows the distribution of the first order Optimal Observable, both for the Standard Model case and for non vanishing  $\dtilde\neq 0$ values, which 
+introduce an asymmetry in the distribution and yield a non vanishing mean value.
+
+\begin{figure}[h!]
+\centering 
+    \includegraphics[width=0.49\textwidth]{figures/oo_genlevel.pdf}
+\caption{Distribution of \oo at generator-level for various $\dtilde$ values. The Standard Model sample was generated using aMC@NLO at leading order, and then reweighted to different $\dtilde$ values using the same procedure as described in section~\ref{subsec:reweight}. A typical VBF selection has been applied - see table \ref{tab:cuts}}
+\label{fig:ooGenLevel}
+\end{figure}
+
+
+The values of the leading order Matrix Elements needed for the calculation of the Optimal Observable are 
+extracted from HAWK~\cite{Ciccolini:2007jr,Ciccolini:2007ec,Denner:2014cla}. The evaluation requires
+the four vectors of the Higgs boson and the two tagging jets. The Bjorken $x$ values of the incoming 
+partons 1 (2) in positive (negative) z-direction can be derived 
+exploiting energy-momentum conservation from the Higgs boson and tagging jet  four-momenta as:
+\begin{equation}
+x_{1/2}^{\textrm{reco}} = \frac{M_{\textrm{Hjj}}}{\sqrt{s}}e^{\pm y_{\textrm{Hjj}}} ~~~~~~ 
+\end{equation}
+where $M_{\textrm{Hjj}}$ ($y_{\textrm{Hjj}}$) is the mass (rapidity) of the vectorial sum of the 
+tagging jets and the Higgs boson four-momenta.
+As experimentally the flavour of the incoming and outgoing partons can not be determined,
+the sum over all possible flavour configurations $ij \rightarrow kl H$
+weighted by the parton distribution functions 
+is calculated separately for the matrix elements in numerator and denominator:
+\begin{eqnarray}
+|\mathcal{M}_{\mathrm SM}|^2 &=&  \sum_{i,j,k,l} f_i(x_1) f_j(x_2) |\mathcal{M}_{\mathrm SM}|^2
+(ij \rightarrow kl H) \\
+2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}}) &=& \sum_{i,j,k,l} 
+f_i(x_1) f_j(x_2) 2\Re(\mathcal{M}_{\textrm{SM}}^{*}\mathcal{M}_{\textrm{CP-odd}})
+(ij \rightarrow kl H)) \, .
+\end{eqnarray}
+
+
+At reconstruction-level, the inputs to the Optimal Observable calculation need to be replaced by their best-possible reconstructed equivalents -- the following inputs are used:
+\begin{itemize}
+\item The reconstructed Higgs boson four-vector, being the sum of the two $\tau$ four-vectors obtained using the Missing Mass Calculator (MMC)~\cite{mmc} algorithm. The presence of neutrinos in the $\tau$ decays means that only the visible component of the  $\tau$ decay can actually be reconstructed -- to obtain an estimator of the full $\tau$ four-vectors, the MMC algorithm scans over each possible configuration (accounting also for the \MET\ resolution), weighting it by its probability, and finally returns for each component the most probable value of the scan points.
+\item The leading and sub-leading reconstructed jets. The jets are reconstructed using the \atk\
+algorithm~\cite{Antikt1, Antikt2} with a distance parameter $R=0.4$, and are subject to channel-dependent selections on their $\pt$ and pseudo-rapidity separation, discussed in Section~\ref{sec:analysis}.
+\item The reconstructed Bjorken $x$ obtained from the equations
+\begin{align}
+x_{1}^{\textrm{reco}} &= \frac{M_{\textrm{final}}}{\sqrt{s}}e^{y_{\textrm{final}}} \\
+x_{2}^{\textrm{reco}} &= \frac{M_{\textrm{final}}}{\sqrt{s}}e^{-y_{\textrm{final}}}, 
+\end{align}
+where $M_{\textrm{final}}$ ($y_{\textrm{final}}$) is the mass (rapidity) of the vectorial sum of the two leading jets and the two $\tau$ four-vectors obtained as discussed in the preceding items.
+\end{itemize}
+
+In the present study only the first order Optimal Observable is used. This is primarily due to the increased complexity resulting from trying to combine \oo\ and \ootwo\ (e.g. through a two-dimensional fit), compared to the relatively small gains obtained by including the second order Optimal Observable. More specifically, the low signal statistics in the signal region imply that a two-dimensional fit requires a coarser  binning, which in turn reduces the sensitivity compared to a one-dimensional fit of the first order Optimal Observable with a relatively finer binning. In the future (e.g. run 2), when higher signal statistics can be expected in the data, this point should certainly be revisited and the gains of re-including the second order Optimal Observable re-evaluated. From this point on in the present note, unless explicitly specified, the expression 'Optimal Observable' will refer to the first order Optimal Observable. 
+

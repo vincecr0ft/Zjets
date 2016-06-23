@@ -1,0 +1,244 @@
+\section{Analysis Description}
+\label{sec:analysis}
+
+%{\color{blue}This section should describe the analysis, focusing on the differences to the couplings analysis.}
+
+As already mentioned, the couplings analysis~\cite{EvidencePaper, HtautauSupport} is followed very closely. The background estimation is performed in an entirely identical manner to that described in Section 5 of Ref.~\cite{HtautauSupport} and will therefore not be repeated here. 
+The same object selection, preselection and categorisation from the couplings analysis are also retained (detailed in Section 4 of Ref.~\cite{HtautauSupport}), and the identical Boosted Decision Tree (BDT) training is used for separating  signal\footnote{Only Higgs events produced through the VBF process are considered as signal for the training of the BDT.} from backgrounds (Sections 6 and 7 of Ref.~\cite{HtautauSupport}). However, the signal region is here defined \emph{on top} of the VBF category of Ref.~\cite{HtautauSupport} -- where the couplings analysis used the full BDT score distribution as the final discriminating variable, here instead a cut on this score is applied and the signal region defined as the events with a value above this cut. In this signal region, the Optimal Observable distribution is then used as the final discriminating variable.
+It may also be noted that the boosted category of Ref.~\cite{HtautauSupport} is not used at all. Furthermore all Higgs production channels apart from VBF (i.e. gluon fusion and production associated with a Z or W) are categorised as backgrounds, and the simulation of CP-odd couplings is only applied to VBF production. 
+Table~\ref{tab:regions} summarises the full definition of the preselection and the corresponding signal region for each of the channels. The cuts and thresholds are different between the channels, as they were optimised separately in the context of the analysis of Ref.~\cite{HtautauSupport} due to the differing background compositions.
+
+In the blinded phase of the analysis the choice was made to use measured data in all control regions while only keeping the signal region blinded. This was deemed appropriate since the validity of the background modelling was already been established in the couplings analysis. The inclusion of data in control regions has also acted as an important test on the fitted signal strength $\mu$. Apart from controlling the \Ztt background normalisation the low BDT control region also has an impact on $\mu$. Performing a blinded fit by injecting the expected Asimov data into the control region and scaling the included signal strength should return a best estimate $\mu_\textrm{best}$ that is in agreement with the injected value within the fit uncertainty. Various binnings were considered for the low BDT control region, which will be described in more detail for each decay channel in the sections below.
+
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    Channel    & Preselection \\
+    \hline
+    \multirow{10}{*}{\tll}
+    & Exactly two isolated opposite-sign leptons \\
+    & Events with \thad~candidates are rejected \\
+    & $30~\GeV < m^\mathrm{vis}_{\tau\tau} < 100$ $(75)\GeV$ for DF (SF) events \\
+    & $\Delta\phi_{\ell \ell} < 2.5$ \\
+    & $\MET > 20 \ (40)\GeV$ for DF (SF) events\\
+    & $E_\mathrm{T}^\mathrm{miss,HPTO}$ > 40~\GeV\ for SF events \\
+    & $\pt^{\ell_{1}}+\pt^{\ell_{2}} > 35\GeV$ \\
+    & Events with a $b$-tagged jet with $\pt >$ 25~\GeV\ are rejected \\
+    & $0.1<x_{\tau_{1}},x_{\tau_{2}}<1$ \\
+    & $m_{\tau\tau}^\mathrm{coll} > m_Z - 25\GeV$ \\%\cline{2-2}
+    \hline
+    \multirow{3}{*}{\tlhad}
+    & Exactly one isolated lepton and one medium \thad candidate with opposite charges \\
+    & $\mt < 70 $ GeV \\
+    & Events with a $b$-tagged jet with $\pt > 30$ GeV are rejected \\
+    \hline\hline
+    Channel &  Signal region selection cuts \\ \hline\hline
+    \multirow{3}{*}{\tll}
+    & At least two jets with $\pt^{j_{1}}$ $>$ 40~\GeV\ and $\pt^{j_{2}}$ $>$ 30~\GeV \\
+    & $\Delta\eta(j_{1},j_{2}) > 2.2 $\\      
+    & \bdtscore $> 0.68 $\\
+    & |\oo| $<15$\\
+    \hline
+    \multirow{4}{*}{\tlhad}
+    & At least two jets with $\pt(j_{1}) > 50$ GeV and $\pt(j_{2}) > 30$ GeV \\
+    & $\Delta\eta(j_{1},j_{2}) > 3.0$ \\
+    & $m_{\tau\tau}^{\textrm{vis}} > 40$ GeV \\
+    & \bdtscore $> 0.95$ \\ 
+        & |\oo| $<15$\\
+    \hline
+  \end{tabular}
+  \caption{Summary of the preselection and the signal region selection used in the analysis, per channel. The only difference to the corresponding selections in~\cite{EvidencePaper, HtautauSupport}, is the final cut on the BDT score.  For definitions of the various quantities, please see Ref.~\cite{HtautauSupport}.}
+  \label{tab:regions}
+  \end{center}
+\end{table}
+
+
+% Elias: Moved this nice text to fit.tex, where I think it belongs more.
+%The sensitivity to CP-odd couplings is estimated using a maximum-likelihood fit to the signal region in addition to different control regions for each decay channel described below. The control regions help constrain the background normalisations. A set of signal samples corresponding to a range of CP-odd mixing strengths were created by reweighting the purely CP-even VBF signal sample produced through ATLAS simulation (see section~\ref{subsec:reweighting}). The fit is performed on the signal strength $\mu$ such that $\mu = 0$ $(\mu = 1)$ corresponds to the absence (presence) of a Higgs boson signal having the Standard Model production cross section. The statistical analysis employs a binned likelihood function $L(\mu, \theta)$ constructed as the product of Poisson probability terms as an estimator for $\mu$. Systematic uncertainties on the signal and background expectations are described by nuisance parameters denoted $\theta$, which are parametrised by Gaussian constraints. The $\theta$ parameters impact the expected numbers of signal and background events in each histogram bin. Finally, a test statistic $q_\mu$ is constructed as $q_\mu = -ln(\mathcal{L}(\mu,\hat{\vec{\theta}}))$, where $\hat{\vec{\theta}}$ are the nuisance parameter values that maximise the likelihood for a particular value of $\mu$. 
+
+
+\subsection{The \tll channel}
+\label{subsec:leplep}
+The \tll channel targets all final states with exactly two isolated leptons (\textit{ee},$\mu\mu$ or \textit{e}$\mu$) with opposite sign. The definition of the preselection and the signal region are listed in table~\ref{tab:regions}. They are kept identical to the VBF category of the couplings analysis~\cite{EvidencePaper, HtautauSupport}, adding a cut of \bdtscore$>0.68$ on the BDT classifier and limiting the Optimal Observable by $|\oo|<15$. By cutting on the BDT classifier the signal-over-background ratio is increased significantly, which is necessary for extracting differences in the \oo line shape of CP-mixing models compared to Standard Model signal. Figure~\ref{fig:plot_leplep_bdtcut} shows the statistical significance for a counting experiment (see equations 96 and 97 in ~\cite{cutandcountsignificance}) as a function of a cut on the BDT classifier in the VBF category. As expected, the sensitivity decrease for lower cut values. The chosen working point corresponds to the three most signal-like bins of the BDT classifier distribution, which is a reasonable choice in terms of maximizing the significance while avoiding too little statistics in the background samples. Furthermore, the cut on the Optimal Observable $|\oo|<15$ is introduced to exclude regions, where no background events are expected.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.49\textwidth]{figures/leplep/Signf_CutBDT_leplep.eps}
+   \caption{Statistical counting significance as function of BDT score cuts in the VBF region for the \tll channel.}
+  \label{fig:plot_leplep_bdtcut}
+\end{figure}
+
+
+\begin{table}[h!]
+%\begin{sidewaystable}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+      \hline
+      %\multirow{3}{*}{\tll}
+              & \multicolumn{2}{c|}{VBF region} & \multicolumn{2}{c|}{Signal region} \\ \hline
+      Process      & \tll            & \tlhad          & \tll            & \tlhad             \\ \hline \hline
+      Data         & $1014\pm 32$    & $2830\pm53$     & blind           & blind              \\
+      \Ztt         & $601.2\pm 7.9$  & $900 \pm 17$    &  $19.0 \pm 1.5$ & $20.8 \pm 2.7$     \\
+      Fake bkg     & $60.8 \pm 4.1$  & $1637 \pm 13$   & $2.2 \pm 0.7$   & $24.3 \pm 1.6$       \\
+      Top          & $142.7\pm 6.4$  & $84.5 \pm 4.8$  & $3.1 \pm 0.8$   & $4.7 \pm 1.4$      \\
+      \Zll+Diboson & $199.5\pm 10.0$ & $ 119.1\pm 5.6$ & $10.5\pm 1.6$   & $6.3 \pm 1.1$      \\
+Non-VBF $H\to\tau\tau/WW$ & $10.7 \pm 0.3$  & $12.4 \pm 0.6$  & $1.6 \pm 0.1$   & $2.6 \pm 0.3$      \\
+      Total bkg    & $1015\pm 15$& $2753\pm23$ & $36.4 \pm 2.4$  & $58.8 \pm 3.6$        \\ \hline
+      \VBFHtt+$(VBF)H\to WW$ & $12.8 \pm 0.1$ & $21.7 \pm 0.2$  & $6.3 \pm 0.1$ & $11.1 \pm 0.1$     \\ \hline
+      S/B          & $\approx 0.013$& $\approx 0.008$ & $\approx 0.17$  & $\approx 0.19$     \\\hline
+    \end{tabular}
+    \caption{Expected pre-fit event yields in the VBF region and in the final signal region including the cut on high BDT values per process and per channel.}
+    \label{tab:expectedyieldsll}
+  \end{center}
+%\end{sidewaystable}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+The expected event yields in the VBF category and in the high BDT signal region for each background and the signal component are listed in table~\ref{tab:expectedyieldsll}. The signal component contains about $5.21 \pm 0.04$ events from \VBFHtt and $1.04 \pm 0.04$ events from $(VBF)H\to WW$ in the signal region. CP-mixing $(VBF)H\to WW$ signal samples are generated by re-weighting the pure Standard Model sample equivalently to \VBFHtt. Anomalous couplings in the decay of $(VBF)H\to WW$ are expected to be negligible as shown in appendix~\ref{app:hww}. The distribution of the Optimal Observable in the signal region is shown in figure~\ref{fig:plot_leplep_oo_sr}(a). Figure ~\ref{fig:plot_leplep_oo_sr}(b) illustrates the \oo line shape for different CP-mixing models. The \oo binning in the signal region is chosen such, that the sensitivity is maximized while all bins contain still a reasonable amount of statistics. Several binning choices have been tested and for each choice the full fit procedure has been repeated. The current binning choice is found to be a sound working point. The modeling of the Optimal Observable in comparison to data can be reviewed in several control regions. The low \bdtscore~region is defined by a cut on \bdtscore$<0.05$, which are the 10 most background-like bins of the BDT classifier, to reduce the signal contribution and exclude bins in an intermediate range with low statistics. Furthermore, the original BDT is re-binned by a factor of two to minimize the influence of statistical fluctuations. The low BDT control region is dominated by events from \Ztt decays. In agreement to the couplings analysis~\cite{EvidencePaper, HtautauSupport}, further control regions for processes including top quarks and \Zll decays are defined by inverting the $b$ Veto and cutting on the $Z$ mass window in the VBF category. The BDT classifier and \oo distributions in these control regions are shown in figure~\ref{fig:plot_leplep_oo_cr}. A summary of the control region definitions can be found in table~\ref{tab:controlregion}. The background model is in good agreement with the data in all control regions.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/leplep/OptObsMMC_all_SR_cpHighVBFbVeto_emb.eps}  }
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/leplep/comp3_OptObsMMC_all_SR_cpHighVBFbVeto.eps}}
+   \caption{Distributions of \oo in the signal region (a) of the \tll\ channel. Comparison of \oo~for various signal models (b), nomralized to unity: pure SM (black), signal model of $\dtilde=-0.2$ (blue) and a model of $\dtilde=+0.9$ (red). }
+  \label{fig:plot_leplep_oo_sr}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/mvaVBF2_all_SR_cpLowVBFbVeto_emb.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/OptObsMMC_all_SR_cpLowVBFbVeto2_emb.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/OptObsMMC_all_SR_cpVBFZllbVeto_emb.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/OptObsMMC_all_SR_cpVBFbTag_emb.eps}  }
+   \caption{Distributions of the BDT classifier (a) and the \oo (b) in the low \bdtscore~ control region and of the \oo in the \Zll enriched control region (c) in the top enriched control region (d) in the \tll\ channel.}
+  \label{fig:plot_leplep_oo_cr}
+\end{figure}
+
+\begin{table}[h!]
+%\begin{sidewaystable}
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+      \hline
+      Region & \tll & \tlhad \\ \hline \hline
+      $Z \rightarrow \ell\ell$ & $80 < m^\mathrm{vis}_{\tau\tau} < 100~\GeV$ & \\ 
+      & same-flavour events &  \\ \hline
+      Top  & Invert $b$-jet veto & Invert $b$-jet veto \\
+      & & $m_T > 40$ GeV \\ \hline
+      Low \bdtscore~  & \bdtscore < 0.05 & \bdtscore < 0.95 \\
+      \hline
+    \end{tabular}
+    \caption{Summary and definition of the control regions used in the analysis per channel.}
+    \label{tab:controlregion}
+  \end{center}
+  %\end{sidewaystable}
+\end{table}
+
+\begin{table}[t]
+\centering
+%\resizebox{14cm}{!} {
+\begin{tabular}{|l l l|}
+\hline
+Variable                                 & Region                      & Bin edges \\ \hline
+\multirow{3}{*}{Optimal observable \oo}  & Signal region               & -15,-5,-2.5,0,2.5,5,15 \\
+                                         & Top CR                      & Only one bin \\
+                                         & $Z\to\ell\ell$ CR  & Only one bin \\ \hline
+BDT score               & Low BDT CR & -1, -0.79, -0.58, -0.37, -0.16, 0.05 \\\hline
+\end{tabular}
+\caption{Histogram binnings in the final log likelihood fit in \tll}
+\label{tab:leplep_binning}
+\end{table}
+
+Since the complex BDT approach combines several observables into one classifier, it is important to make sure, that correlations with the Optimal Observable does not cause any bias of \oo~by cutting on the \bdtscore. Figure \ref{fig:plot_leplep_mean_rms} shows the mean value of \oo~in bins of \bdtscore. The mean of \oo~is fluctuating closely around zero for pure Standard Model \VBFHtt signal and background sources of \ggHtt and \Ztt. In pure Standard Model couplings, this is expected, since a significant deviation from zero would suggest CP-violation. In addition, figure~\ref{fig:plot_leplep_mean_rms} indicates, that also the width of SM \VBFHtt remains stable, depending on different \bdtscore~values. This provides confidence, that cutting on \bdtscore~ is a valid approach to define the signal region without distorting the CP-invariance of \oo~in the case of Standard Model processes.      
+
+\begin{figure}[htbp]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_mean_1.eps}  }
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_mean_2.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_rms.eps}  }
+   \caption{Dependence of mean value of \oo\ on \bdtscore~for \VBFHtt and \ggHtt (a) and \Ztt (b) in case of Standard Model processes. In (c) the width of first order Optimal Observable of Standard Model \VBFHtt is shown in bins of different \bdtscore~values. Plots are for the \tll\ channel.}
+  \label{fig:plot_leplep_mean_rms}
+\end{figure}
+
+%{\color{blue}This section should describe the leplep analysis. Include plots of the OO in SR and CRs, and also of the BDT score before cutting. And any other plots deemed useful!}
+
+\clearpage
+
+\subsection{The \tlhad\ channel}
+\label{subsec:lephad}
+
+%{\color{blue}This section should describe the lephad analysis. Include plots of the OO in SR and CRs, and also of the BDT score before cutting. And any other plots deemed useful!}
+
+The \tlhad analysis channel is expected to have the largest impact on the CP-odd coupling sensitivity, having a branching fraction of approximately 4 times that of \tll. It contains the final states having exactly one isolated lepton ($e$ or $\mu$) and one hadronic tau candidate having opposite charges. The preselection and signal region are defined in table~\ref{tab:regions}. These selections are identical to those in the couplings analysis~\cite{EvidencePaper}, apart from an additional selection cut applied to the \bdtscore~discriminant in the signal region in order to obtain a sample of very signal-like events. A sensitivity optimisation of this cut is performed: as it was done in the \tll channel, the statistical significance for a counting experiment is calculated as a function of the BDT score, and the value of \bdtscore~$>0.95$ is chosen as a sensible compromise between statistics and sensitivity. Similarly, the cut $|\oo|<15$ is introduced to exclude the region with limited number of background events. The \oo binning in the signal region is chosen such that the sensitivity is maximized while all bins still contain a reasonable amount of statistics. Several binning choices have been tested and for each choice the full fit procedure has been repeated. The current binning choice is found to be a reasonable working point.
+Due to the complexity of the fit when including systematic uncertainties, these are not included when performing the optimisation.
+A compromise was reached between the resulting sensitivity and the amount of data present in each bin. In order to ensure numerical stability of the binned likelihood fit, the histogram binning was chosen such that at least one expected total background event is present in every bin. This necessitated the merging of high $|O_{1}|$ bins, since the statistics is quickly depleted in these regions of the plot. A single empty bin is observed in the top background histogram, and a Kyle fix is applied to this bin in order to avoid any potential fit problems. This fills the empty bin with the mean event weight calculated from the set of top background events in the signal region.
+All expected event yields for individual backgrounds and the signal are listed in table~\ref{tab:expectedyields}. In addition to the final signal region, the fit includes a top-enriched control region using \oo\ and a low BDT control region using the \bdtscore. These are defined in table~\ref{tab:controlregion}.
+
+Figure~\ref{fig:plot_lephad_oo_sr} shows \oo in the final signal region and \oo for pure signal with various CP-odd coupling hypotheses. In addition, three control region plots, two of \oo for the top control region and the low BDT control region and one of the \bdtscore in the low BDT CR, are shown in figure~\ref{fig:plot_lephad_oo_lowbdtcr_topcr_bdtscore}. The top control region is used both as a check of the modelling of \oo, and as a means to constrain the normalisation of the top background in the final likelihood fit. In the final fit only the total yield is used, corresponding to a histogram with a single bin. Both control regions show good agreement between the expected yields and data.
+
+The choice to not include the boosted category as a control region has the potential to change the optimal fit model in the remaining regions, which in the case of \tlhad is limited to the low BDT control region since this is the only other control region that uses the shape of the distribution. A complete fit including systematic uncertainties and with Asimov data in the control region was performed for a set of binning variations in the low BDT control region. This included varying the number of bins in the full remaining region below 0.95 as well as limiting the control region to lower values only. It was decided to retain the same non-equidistant binning used in the couplings analysis, meaning all bins below a \bdtscore of 0.95 have identical bin edges to those described in the couplings analysis (see table~\ref{tab:lephad_binning}). This decision was informed by taking into account the discrepancy between the injected signal strength $\mu$ and the best estimate from the fit $\mu_\textrm{best}$ as well as the compatibility of the data in control regions with the post-fit background distributions.
+
+\begin{table}[t]
+\centering
+%\resizebox{14cm}{!} {
+\begin{tabular}{|l l l|}
+\hline
+Variable                                 & Region                      & Bin edges \\ \hline
+\multirow{2}{*}{Optimal observable \oo}  & Signal region               & -15,-5,-2.5,0,2.5,5,15 \\
+                                         & Top CR                      & Only one bin \\ \hline
+\multirow{2}{*}{BDT score}               & \multirow{2}{*}{Low BDT CR} & -1, -0.95, -0.35, 0.35, 0.7, 0.851, \\
+                                         &                             & 0.904, 0.936, 0.95 \\ \hline
+\end{tabular}
+\caption{Histogram binnings in the final log likelihood fit in \tlhad}
+\label{tab:lephad_binning}
+\end{table}
+
+
+\begin{figure}[h!]
+\centering 
+   \subfloat[]{ \includegraphics[width=0.49\textwidth]{figures/optObservable_reco_SR_lephad.pdf} }
+   \subfloat[]{ \includegraphics[width=0.49\textwidth]{figures/lephad/optObs_SR_signal_comparison.pdf} }
+\caption{(a) Distribution of \oo in the final signal region of the \tlhad channel. (b) Comparison of VBF signal distributions in \tlhad normalised to unity when assuming $\tilde{d} = 0.0,-0.2,+0.6$.}
+\label{fig:plot_lephad_oo_sr}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{ \includegraphics[width=0.49\textwidth]{figures/optObservable_reco_LowBDTCR_lephad.pdf} }
+   \subfloat[]{ \includegraphics[width=0.49\textwidth]{figures/optObservable_reco_TopCR_lephad.pdf} } \\
+   \subfloat[]{ \includegraphics[width=0.49\textwidth]{figures/BDTScore_LowBDTCR_lephad} }
+   \caption{Distributions of \oo\ in the low BDT control region (a) and top control region (b) as well as the \bdtscore in the low BDT score control region (c) in the \tlhad\ channel.}
+  \label{fig:plot_lephad_oo_lowbdtcr_topcr_bdtscore}
+\end{figure}
+
+
+A similar check to the one performed in \tll was performed in order to ensure that the \oo distribution is not biased by the \bdtscore~selection cut used for the signal region. Figure~\ref{fig:plot_lephad_mean_vs_BDT} shows the mean value of \oo as a function of the \bdtscore~value for SM signal in addition to various backgrounds. The mean value is seen to be compatible with zero within the statistical uncertainties as expected for a purely Standard Model coupling.
+
+Another check was performed to gauge the impact on \oo\ when calculating it using truth and reco variables respectively. The result is shown in figure~\ref{fig:plot_lephad_optobs_truth_reco}. The input variables are seen to have a very minimal impact on the distribution of \oo.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/cp_lephad_mean_1.pdf}  }
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/cp_lephad_mean_2.pdf}  }
+   \caption{Dependence of the mean value of \oo\ on \bdtscore~for \VBFHtt and \Ztt (a) and \ggHtt (b) in case of Standard Model processes.}
+  \label{fig:plot_lephad_mean_vs_BDT}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/optObservable_lephad_truth_reco_comp_1.pdf}  }
+   \subfloat[]{    \includegraphics[width=0.47\textwidth]{figures/optObservable_lephad_truth_reco_comp_2.pdf}  }
+   \caption{\oo in \tlhad replacing individual reco level variables with truth reconstructed values in order to gauge the impact of going from truth to reco level. \oo\ itself is shown in (a), while the residual between the full reco calculation and each of the calculations with a truth value included is shown in (b).}
+  \label{fig:plot_lephad_optobs_truth_reco}
+\end{figure}
+
+\clearpage

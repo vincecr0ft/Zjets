@@ -1,0 +1,53 @@
+\section{Datasets}
+\label{sec:samples}
+
+
+
+\subsection{Data}
+
+The analysis uses all data collected by ATLAS in proton-proton collisions
+in 2012, at the center-of-mass energy of  8~TeV.  
+The decision was taken not to make use of the 7~TeV dataset from 2011 due to the very small expected sensitivity gain and very large overhead associated with including that sample.
+After applying a
+Good Runs List that requires that all of the detector subsystems are
+``good'', the dataset used corresponds to 20.3~$\ifb$ for 8~TeV data. 
+The Good Runs List used for these analyses is:
+\newline
+{\scriptsize
+%\verb+data11_7TeV.periodAllYear_DetStatus-v36-pro10_CoolRunQuery-00-04-08_Higgs_tautau_lh.xml + (for 7 TeV)
+\verb+data12_8TeV.periodAllYear_DetStatus-v61-pro14-02_DQDefects-00-01-00_PHYS_StandardGRL_All_Good.xml+ 
+}
+
+This Good Runs List is identical to what was used in the couplings analysis for 8~TeV data, as are the triggers utilised (summarised in table 2  of Ref.~\cite{EvidencePaper}), meaning that exactly the same dataset is used. 
+
+\subsection{Monte Carlo Simulated Samples}\label{subsec:mcsamples}
+
+For all signal and background processes not explicitly mentioned in the following, the same Monte Carlo simulated samples are used as in the couplings analysis~\cite{EvidencePaper, HtautauSupport}, subjected to identical treatment in terms of corrections and normalisations. A comprehensive overview of these samples is provided by table 1 of Ref.~\cite{EvidencePaper}.
+
+For gluon fusion Higgs production, ggH, a large discrepancy is observed between Bjorken $x$ values at generator level and when calculated from  reconstruction using ggH POWHEG~\cite{POWHEGggH} (the default generator for this process in the couplings analysis).\comment{Describe that Bjorken $x$ is calculated using 2 highest pT jets} The ggH POWHEG sample is NLO for 0 jets, which means that only one parton comes from the hard interaction, while any additional jets will originate from the parton shower. This makes the ggH POWHEG sample unsuitable for calculating the Optimal Observable, since it makes use of both the leading and sub-leading jets in the event, as discussed in the preceding section. In this study ggH is therefore simulated using MINLO~\cite{MINLO}. A  MINLO 1-jet sample\footnote{NLO for 1-jet events, and thus LO for 2-jet events.} was generated through central production with $\sqrt{s}=8$ TeV and $\sigma\times\mathcal{B} = 0.5556$ pb. The sample contains 917899 events and has the dataset ID 181134. This sample is used in the present analysis instead of the POWHEG sample.%Figure~\ref{??} shows the correlation between Bjorken $x_1$ at generator level and reconstructed truth for POWHEG ggH and MINLO.
+
+\comment{Insert Bjorken x correlation plot}
+
+\comment{Elias: Mention somewhere (a table?) the dataset IDs of the MINLO samples we use, as well as how many events were produced for each channel.}
+
+\subsection{Signal Reweighting Procedure}
+\label{subsec:reweight}
+
+In order to simulate any  degree of CP-mixing, a Matrix Element-based reweighting procedure is applied on the existing POWHEG+Pythia8 Standard Model VBF signal samples. The reweighting takes as input truth-level information for each event, and more specifically the Bjorken $x$ values, and the four-vectors of the outgoing Higgs boson\footnote{The Higgs boson with status 22 is used, i.e. before any radiation etc.} and of the final-state partons (before any hadronisation), as well as the flavour of the involved partons. Using these, the weights are obtained as the ratio of the Matrix Element squared evaluated for the CP-mixed case one wishes to reweigh to, over the Standard Model Matrix Element squared. All of the Matrix Element calculations for the reweighting  are performed using code extracted from HAWK~\cite{Ciccolini:2007jr,Ciccolini:2007ec}. For the CP-mixed scenarios, the parameter $\tilde{d}_{B}$ is set equal to $\tilde{d}$. 
+
+POWHEG includes matching of matrix elements and parton shower at NLO, meaning that there can be three different kinds of events (with $q$ and $\bar{q}$ interchangable): $qq \to qqH$, $qg \to qq\bar{q}H$ and $qq \to qqgH$. The reweighting uses the corresponding Matrix Element at LO from HAWK for the $2\to2+H$ or $2\to3+H$ process, taking into account the flavours of incoming and outgoing partons. This procedure gives a very good approximation to a real and full NLO reweighting, as it is shown in appendix \ref{app:reweight}.
+
+Figure~\ref{fig:plot_leplep_oo_reweighting} shows the reconstruction-level first and second order Optimal Observable for the Standard Model case, and for CP-mixed scenarios, obtained using the reweighting procedure just described, in the \tll\ Signal Region (defined in the next section).
+
+
+\begin{figure}[htbp]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_oo1.eps}  }
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_oo2.eps}  }\\
+   \subfloat[]{    \includegraphics[width=0.4\textwidth]{figures/cp_leplep_oo1vsoo2.eps}  }
+   \caption{First order (a) and second order (b) Optimal Observable distributions for different values of \dtilde, and two-dimensional correlation of first order versus second order Optimal Observable for different \dtilde values (c). The black dots indicate the SM distribution, whereas the lines represent different reweighted CP-mixed cases. All plots are at reconstruction level, following the full \tll\ Signal Region selection.}
+  \label{fig:plot_leplep_oo_reweighting}
+\end{figure}
+
+
+

@@ -1,0 +1,14 @@
+\section{Signal injection}
+\label{app:signalinjectioni}
+
+As an additional test of the fitting procedure, different signal models can be injected into the Asimov dataset. Figure~\ref{fig:plot_injection} shows the NLL curve for an injection of pure SM signal (\dtilde=0) compared to a model of \dtilde=0.3. The minimum of the NLL curve confirms the assumed signal hypothesis within the Asimov dataset. The fit in this example has been performed for \tlhad, including control regions. The signal is normalized to 1.2$\times$ SM cross section.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/results/Combination_mu12_injection.eps}
+  \includegraphics[width=0.7\textwidth]{figures/Combination_mu12_injected.eps}
+     \caption{NLL curve for Asimov data including signal with \dtilde=0 and \dtilde=0.3, normalized to 1.2$\times$ SM cross section.}
+  \label{fig:plot_injection}
+\end{figure}
+
+

@@ -1,0 +1,346 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Expected Sensitivity}
+As explained in the previous section, the central confidence interval is determined from a negative log-likelihood function. The result presented here is the expected central confidence interval using an Asimov dataset in the signal region, which consists of the expected background and the pure CP-even Standard Model like (VBF)\Htt~ signal scaled by 1.0 and 1.2 times signal cross-section. However, collision data is used in the control regions. Figure \ref{fig:fit_result_prelim} (a) and (b) shows the combination of the  \tlhad~ and \tll~ channel and each channel separately for both hybrid-Asimov datasets. This  approach includes a complete set of nuisance parameters, which are listed in section~\ref{sec:systematics}. %A set of theory uncertainties, which is related to the shape of the optimal observable, is not yet included. 
+In figure \ref{fig:fit_result_prelim_bestfit} the best-fit signal strength of each signal hypothesis can be observed using the same hybrid-Asimov dataset mentioned above. As expected the signal strength is constrained close to the assumed value in the corresponding Asimov datasets at \dtilde=0 per definition and decreases for less compatible CP-mixing models, which are normalized to Standard model cross section at pre-fit level. The remaining differences between the assumed signal strength in the Asimov data and the best-fit value explained by constraints of nuisance parameters due to including information of real data in control regions.
+
+The postfit distribution of the first order Optimal Observable in each channel using Asimov datasets is shown in figure \ref{fig:fit_result_postfit}, including pure SM signal. Figure \ref{fig:fit_result_postfit_signal} illustrates similar postfit distributions for a signal model with $\tilde{d}$ =0.3. The postfit distributions of the BDT score in the low BDT control region, which is used in the fit to further constrain nuisance parameters, are shown in figure~\ref{fig:fit_result_postfit_low}.
+
+The expected sensitivity is mainly driven by the \tlhad~ channel and a corresponding expected confidence interval on $\tilde{d}$\ at 1$\sigma$ level, with a basic set of uncertainties included, is determined to be [-0.1,0.1] (assuming $\mu=1.2$). 
+
+
+
+\subsection{Observed Results}
+The observed $\Delta$NLL as function of the \dtilde~for the combination of both channels and each channel individually is shown in figure~\ref{fig:fit_result_obs}. %The resulting 1$\sigma$ confidence interval on $\tilde{d}$\ is found to be [-0.11,0.05]. 
+The optimal observable of first order used in this analysis is CP-odd, and thus
+for a purely CP-odd Higgs boson it will be symmetric again, as in the
+pure CP-even SM case. Hence, at very high \dtilde\ values the current method is not sensitive anymore,
+and the $\Delta$NLL curve will start approaching zero again.
+However a pure CP-odd state, as well as very high
+amounts of mixing (large values of |\dtilde|), have already been
+excluded by previous analyses~\cite{Aad:2015mxa}. The present analysis therefore only focuses on small absolute values of \dtilde. In the range considered, \dtilde\ values of [-0.11,0.05] are found to be consistent with the data at the 1 sigma level.
+This  interval has been extracted from the negative log-likelihood curve where $\Delta$NLL = 0.5 as explained in section \ref{sec:fit}. Since the curve is produced from discrete values, the intersection with $\Delta$NLL = 0.5 has to be determined by interpolation. Both a linear and a quadratic interpolation were attempted using the two closest data points on either side of the intersection. Both interpolation methods yielded identical results within the quoted precision.
+
+The  best-fit signal strengths for the combination are shown in figure~\ref{fig:fit_result_bestfit_obs} and postfit distributions of the first order Optimal Observable for SM signal in figure~\ref{fig:fit_result_postfit_obs}. 
+The postfit normalization factors and uncertainties are summarized in table~\ref{tab:pulls1}. The ranking and pulls of the nuisance parameters for pure SM signal and $\tilde{d}=0.1$ are shown in figure~\ref{fig:plot_pulls} and~\ref{fig:plot_pulls2}. 
+
+The results for the individual channels presented in figure~\ref{fig:fit_result_obs} cannot be used to directly conclude on their individual contribution to the combined result, since the best-fit value of the different nuisance parameters, and in particular of the signal strength, is different in each channel and in the combination, something which directly affects the sensitivity. A better picture of the individual channel contribution can be obtained by using the best-fit results for each nuisance parameter from the combined fit (at each \dtilde\ point), and calculating the NLL for the individual channels for these values. This is shown in figure~\ref{fig:fit_result_obs_snapshot}.  Repeating the same exercise for a wider range, and coarser binning, yields figure~\ref{fig:fit_result_obs_wide} -- as can be seen the curve eventually reaches a plateau, the combination remaining above the 1-$\sigma$ line for all values. For further discussion on the behavior of the NLL curve, see appendix~\ref{app:nllex}.
+
+The mean value of the optimal observable for the signal is expected to be zero for a CP-even case, while there would be deviations in case of CP-violating effects. Since the background, as has been demonstrated, is also expected to have a mean value of zero, it is to be expected that the mean value in data also be consistent with zero in case there are no CP-violating effects within the precision of this measurement. The observed values for the mean value in data, inside the signal regions are $0.3\pm0.5$ for \tll\ and $-0.3\pm0.4$ for \tlhad\ fully consistent with zero and thus with the full-fledged statistical analysis where also no sign of CP-violation is seen.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{\includegraphics[width=0.49\textwidth]{figures/results/Combination_mu12.eps}  }
+   \subfloat[]{\includegraphics[width=0.49\textwidth]{figures/results/Combination_mu10.eps}  }
+   \caption{Expected $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis, for \tll (yellow), \tlhad (dark red) and their combination (light red). An Asimov dataset with Standard Model backgrounds plus pure CP-even Standard Model signal (\dtilde=0), scaled with the signal strength of 1.2 (a) and 1.0 (b), has been used. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_prelim}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{\includegraphics[width=0.49\textwidth]{figures/results/muhat_mu12.eps}  }
+   \subfloat[]{\includegraphics[width=0.49\textwidth]{figures/results/muhat_mu10.eps}  }
+   \caption{Best-fit signal strength at each \dtilde~hypothesis for the combined fit of both channels. An Asimov dataset with Standard Model backgrounds plus pure CP-even Standard Model signal (\dtilde=0), scaled with the signal strength of 1.2 (a) and 1.0 (b), has been used. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_prelim_bestfit}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/lh_OptObs1_remap_postfit_p_0_00.eps}  }
+   \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/ll_OptObs1_remap_postfit_p_0_00.eps}  }
+   \caption{Preliminary postfit distributions of first order Optimal Observable in the signal region  using Asimov datasets for \tlhad~ (a) and \tll (b), including pure CP-even Standard Model signal (\dtilde=0). The error band includes systematic and statistical uncertainties.}
+  \label{fig:fit_result_postfit}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/lh_OptObs1_remap_postfit_p_0_50.eps}  }
+   \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/ll_OptObs1_remap_postfit_p_0_50.eps}  }
+   \caption{Preliminary postfit distributions of first order Optimal Observable in the signal region using Asimov datasets for \tlhad~ (a) and \tll (b), including the CP-mixing signal model for \dtilde=0.5. The error band includes systematic and statistical uncertainties.}
+  \label{fig:fit_result_postfit_signal}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/lh_low_remap_postfit_p_0_00_ratio.eps}  }
+   \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/ll_low_remap_postfit_p_0_00_ratio.eps}  }
+   \caption{Preliminary postfit distributions of the BDT score in the low BDT region for \tlhad~ (a) and \tll (b). The error band includes systematic and statistical uncertainties.}
+  \label{fig:fit_result_postfit_low}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/results/Combination_cp_211015_OptObs.eps}  
+   \caption{Observed $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis, for \tll (yellow), \tlhad (red) and their combination (black). The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_obs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.55\textwidth]{figures/results/muhat_comb_obs.eps}  
+   \caption{Observed best-fit signal strength at each \dtilde~hypothesis for the combined fit of both channels. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_bestfit_obs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/lh_OptObs1_remap_postfit_unblind_p_0_000.eps}  }
+   \subfloat[]{\includegraphics[width=0.5\textwidth]{figures/results/ll_OptObs1_remap_postfit_unblind_p_0_000.eps}  }
+   \caption{Observed postfit distributions of first order Optimal Observable in the signal region for \tlhad~ (a) and \tll (b), including pure CP-even Standard Model signal (\dtilde=0) scaled to its best-fit signal strength. The error band includes systematic and statistical uncertainties.}
+  \label{fig:fit_result_postfit_obs}
+\end{figure}
+
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=0.9\textwidth]{figures/results/cp_pulls_125.eps}  
+%  \caption{NP ranking (left y-axis), pulls (lower x-axis) and the relative impact on $\hat{mu}$ with respect to its total uncertainty (upper x-axis) for the fit of pure SM signal ($\tilde{d}=0$) in the combined analysis using asimov data with $\mu_{\text{asimov}}=1.2$.}
+%    \label{fig:plot_pulls}
+%\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/results/cp_041115_pulls_125.eps}  
+  \caption{Observed NP ranking (left y-axis), pulls (lower x-axis) and the relative impact on $\hat{mu}$ with respect to its total uncertainty (upper x-axis) for the fit of pure SM signal ($\tilde{d}=0$) in the combined analysis. Postfit uncertainties for normalization factors are given in terms of absolute values.}
+    \label{fig:plot_pulls}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/results/cp_041115_p_0_100_pulls_125.eps}  
+  \caption{Observed NP ranking (left y-axis), pulls (lower x-axis) and the relative impact on $\hat{mu}$ with respect to its total uncertainty (upper x-axis) for the fit of non-SM signal ($\tilde{d}=0.1$) in the combined analysis. Postfit uncertainties for normalization factors are given in terms of absolute values.}
+    \label{fig:plot_pulls2}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/results/Combination_NLL_constrained_optobs_full.eps}  
+   \caption{Observed $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis, for \tll (yellow) and \tlhad (red), calculated with the best-fit values of all nuisance parameters from the combined fit (the result of which is shown in black).  The blue line indicates  the  expectation for \dtilde=0, with the best-fit signal strength from the combined fit. The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_obs_snapshot}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/results/Combination_NLL_constrained_extended.eps}  
+   \caption{Observed $\Delta$NLL as function of the \dtilde~ values defining the underlying signal hypothesis for a wider range, for \tll (yellow) and \tlhad (red), calculated with the best-fit values of all nuisance parameters from the combined fit (the result of which is shown in black).  The markers indicate the points where an evaluation has been done -- the lines are only meant to guide the eye.} 
+  \label{fig:fit_result_obs_wide}
+\end{figure}
+
+
+%\begin{sidewaysfigure}[h!]
+%  \centering
+%  \includegraphics[width=1.0\textwidth]{figures/results/np_full.eps}
+%   \caption{Correlation matrix (a) and pulls and constraints of nuisance parameters (b), testing signal model for $\dtilde=0$.}
+%  \label{fig:plot_pulls}
+%\end{sidewaysfigure}
+
+%\begin{sidewaysfigure}[h!]
+%  \centering
+%  \includegraphics[width=1.0\textwidth]{figures/results/np_zoom.eps}
+%   \caption{Zoomed version of correlation matrix (a), showing the normalization factors of the \tll channel and specific jet related uncertainties, and pulls and constraints of these nuisance parameters (b), testing signal model for $\dtilde=0$.}
+%  \label{fig:plot_pulls_zoom}
+%\end{sidewaysfigure}
+
+
+\begin{table}[t!]
+%\begin{sidewaystable}                                                                                                                             
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      & \multicolumn{2}{c|}{High BDT signal region}  \\ \hline
+      Process      &\tll            & \tlhad             \\ \hline \hline
+      Data         & 54          & 68              \\
+      \Ztt         & $19.6 \pm 1.0$  & $19.1 \pm 2.2$     \\
+      Fake bkg     & $2.3 \pm 0.3 $  & $24.1 \pm 1.5$       \\
+      Top          & $3.8 \pm 1.0$   & $4.8 \pm 0.7$      \\
+      \Zll+Diboson & $11.5\pm 1.7$   & $5.3 \pm 1.6$      \\
+      (non-VBF)$H\to\tau\tau/WW$  & $1.6 \pm 0.2$   & $ 2.5\pm 0.7 $      \\ \hline
+      %Total bkg    & $38.5 \pm 2.4$  & $60.4 \pm $        \\ \hline
+      \VBFHtt/$WW$ & $9.8 \pm 2.1$   & $16.7 \pm 4.1$     \\ \hline
+      %S/B          & $\approx 0.14$  & $\approx 0.19$     \\\hline
+    \end{tabular}
+    \caption{Observed postfit event yields in the signal region. The errors include systematic uncertainties.}
+    \label{tab:expectedyields}
+  \end{center}
+%\end{sidewaystable}                                                                                                                               
+\end{table}
+
+
+
+\clearpage
+
+\begin{table}[t!]
+  \begin{center}
+    \begin{tabular}{|l|c|}
+      \hline
+      Nuisance parameter & postfit value (in $\sigma$ unit) \\\hline\hline
+      $\mu$ & $1.55^{+0.86}_{-0.77}$ \\\hline
+      ATLAS\_norm\_LH12\_Top\_bv & $0.981^{+ 0.158}_{-0.158}$ \\
+      ATLAS\_norm\_LH12\_Ztt\_bv & $1.031^{+ 0.113}_{-0.113}$ \\
+      ATLAS\_norm\_LL12\_Top\_vbf & $0.992^{+ 0.130}_{-0.130}$ \\
+      ATLAS\_norm\_LL12\_Zll\_vbf & $1.032^{+ 0.420}_{-0.420}$ \\
+      ATLAS\_norm\_LL12\_Ztt\_bv & $0.997^{+ 0.108}_{-0.108}$ \\
+      \hline
+    \end{tabular}
+    \caption{Postfit normalization factors of the combined fit for $\tilde{d}=0$.}
+      \label{tab:pulls1}
+  \end{center}
+\end{table}
+
+
+\comment{
+
+\begin{table}[t!]
+  \begin{center}
+    \begin{tabular}{|l|c|}
+      \hline
+Nuisance parameter & postfit value (in $\sigma$ unit) \\\hline\hline
+ATLAS\_ANA\_EMB\_ISOL\_2012 & $-0.0161536^{+ 1.01313}_{-1.01313}$ \\
+ATLAS\_ANA\_EMB\_MFS\_2012 & $-0.244664^{+ 0.857728}_{-0.857728}$ \\
+ATLAS\_ANA\_LH12\_Fake\_vbf\_COMP & $0.106077^{+ 0.893687}_{-0.893687}$ \\
+ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT1 & $0.097898^{+ 0.936786}_{-0.936786}$ \\
+ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT2 & $0.056779^{+ 0.97403}_{-0.97403}$ \\
+ATLAS\_ANA\_LH12\_Fake\_vbf\_STAT3 & $0.0575083^{+ 0.97274}_{-0.97274}$ \\
+ATLAS\_ANA\_LH12\_Top\_vbf\_MCNLO & $0.000144769^{+ 0.995082}_{-0.995082}$ \\
+ATLAS\_ANA\_LH12\_Zlt\_vbf\_DETAJJ & $0.0153854^{+ 0.992482}_{-0.992482}$ \\
+ATLAS\_ANA\_LL12\_Fake\_bv & $0.0378696^{+ 0.984209}_{-0.984209}$ \\
+ATLAS\_ANA\_LL12\_Fake\_bv\_SH & $-0.222735^{+ 0.912996}_{-0.912996}$ \\
+ATLAS\_ANA\_LL12\_Top\_vbf & $8.34887e-05^{+ 0.993215}_{-0.993215}$ \\
+ATLAS\_ANA\_LL12\_Zll\_vbf & $-0.000637265^{+ 0.989604}_{-0.989604}$ \\
+ATLAS\_ANA\_LL12\_Zll\_vbf\_DETAJJ & $-0.00136473^{+ 0.985787}_{-0.985787}$ \\
+ATLAS\_ANA\_LL12\_Ztt\_bv & $0.00108079^{+ 0.991771}_{-0.991771}$ \\
+ATLAS\_BCH\_LH12\_vbf & $0.00438244^{+ 0.993295}_{-0.993295}$ \\
+ATLAS\_BCH\_LL12\_bv & $-0.000117499^{+ 0.993392}_{-0.993392}$ \\
+ATLAS\_BR\_WW & $-0.000100924^{+ 0.993365}_{-0.993365}$ \\
+ATLAS\_BR\_tautau & $0.00107294^{+ 0.993951}_{-0.993951}$ \\
+ATLAS\_BTag\_B10\_2012 & $-0.0292422^{+ 0.961284}_{-0.961284}$ \\
+ATLAS\_BTag\_B6\_2012 & $1.84911e-05^{+ 0.993393}_{-0.993393}$ \\
+ATLAS\_BTag\_B7\_2012 & $0.0032046^{+ 0.992783}_{-0.992783}$ \\
+ATLAS\_BTag\_B8\_2012 & $0.00387827^{+ 0.992896}_{-0.992896}$ \\
+ATLAS\_BTag\_B9\_2012 & $-0.0140916^{+ 0.98497}_{-0.98497}$ \\
+ATLAS\_BTag\_C1\_2012 & $4.03704e-05^{+ 0.993391}_{-0.993391}$ \\
+ATLAS\_BTag\_C2\_2012 & $0.000124558^{+ 0.993391}_{-0.993391}$ \\
+ATLAS\_BTag\_C3\_2012 & $4.29269e-05^{+ 0.993392}_{-0.993392}$ \\
+ATLAS\_BTag\_C4\_2012 & $-0.000204593^{+ 0.993388}_{-0.993388}$ \\
+ATLAS\_BTag\_L10\_2012 & $-6.22751e-05^{+ 0.993392}_{-0.993392}$ \\
+ATLAS\_BTag\_L11\_2012 & $-6.39235e-05^{+ 0.993392}_{-0.993392}$ \\
+ATLAS\_BTag\_L12\_2012 & $0.000256997^{+ 0.993382}_{-0.993382}$ \\
+ATLAS\_BTag\_L13\_2012 & $3.81753e-05^{+ 0.993395}_{-0.993395}$ \\
+ATLAS\_BTag\_L6\_2012 & $1.74808e-05^{+ 0.993393}_{-0.993393}$ \\
+ATLAS\_BTag\_L9\_2012 & $-3.0073e-08^{+ 0.993393}_{-0.993393}$ \\
+ATLAS\_BTag\_T4\_2012 & $-2.22986e-05^{+ 0.993393}_{-0.993393}$ \\
+ATLAS\_EL\_EFF & $0.000897481^{+ 0.993393}_{-0.993393}$ \\
+ATLAS\_EL\_EFF\_2012 & $0.0019046^{+ 0.993369}_{-0.993369}$ \\
+ATLAS\_EL\_EFF\_2012\_Emb & $1.04467e-05^{+ 0.993408}_{-0.993408}$ \\
+ATLAS\_EL\_RES & $-0.0531637^{+ 0.91359}_{-0.91359}$ \\
+ATLAS\_EL\_SCALE & $0.01876^{+ 1.05423}_{-1.05423}$ \\
+\hline
+    \end{tabular}
+    \caption{Postfit nusiance parameters of the combined fit for $\tilde{d}=0$.}
+      \label{tab:pulls2}
+  \end{center}
+\end{table}
+
+\begin{table}[t!]
+  \begin{center}
+    \begin{tabular}{|l|c|}
+      \hline
+Nuisance parameter & postfit value (in $\sigma$ unit) \\\hline\hline
+ATLAS\_JER & $0.13266^{+ 0.796997}_{-0.796997}$ \\
+ATLAS\_JES\_1112\_Detector1 & $-0.132805^{+ 1.24295}_{-1.24295}$ \\
+ATLAS\_JES\_1112\_Modelling1 & $0.0633844^{+ 0.882162}_{-0.882162}$ \\
+ATLAS\_JES\_2012\_Detector2 & $0.00941001^{+ 0.994984}_{-0.994984}$ \\
+ATLAS\_JES\_2012\_Detector3 & $0.00148732^{+ 0.994009}_{-0.994009}$ \\
+ATLAS\_JES\_2012\_Eta\_StatMethod & $-0.022151^{+ 1.02734}_{-1.02734}$ \\
+ATLAS\_JES\_2012\_Mixed1 & $-0.00575155^{+ 0.994892}_{-0.994892}$ \\
+ATLAS\_JES\_2012\_Mixed2 & $-0.00586569^{+ 0.994209}_{-0.994209}$ \\
+ATLAS\_JES\_2012\_Modelling2 & $-0.00345155^{+ 0.994436}_{-0.994436}$ \\
+ATLAS\_JES\_2012\_Modelling3 & $0.00614473^{+ 0.989836}_{-0.989836}$ \\
+ATLAS\_JES\_2012\_Modelling4 & $0.0031821^{+ 0.998573}_{-0.998573}$ \\
+ATLAS\_JES\_2012\_PilePt & $0.00309628^{+ 0.990573}_{-0.990573}$ \\
+ATLAS\_JES\_2012\_PileRho\_TAU\_GG & $0.000540804^{+ 0.993683}_{-0.993683}$ \\
+ATLAS\_JES\_2012\_PileRho\_TAU\_QG & $0.0109033^{+ 1.03281}_{-1.03281}$ \\
+ATLAS\_JES\_2012\_PileRho\_TAU\_QQ & $-0.0010025^{+ 0.994141}_{-0.994141}$ \\
+ATLAS\_JES\_2012\_Statistical1 & $-0.000648605^{+ 1.01595}_{-1.01595}$ \\
+ATLAS\_JES\_2012\_Statistical2 & $-0.00686667^{+ 0.989965}_{-0.989965}$ \\
+ATLAS\_JES\_2012\_Statistical3 & $-0.0778873^{+ 0.884586}_{-0.884586}$ \\
+ATLAS\_JES\_Eta\_Modelling & $-0.019938^{+ 0.937262}_{-0.937262}$ \\
+ATLAS\_JES\_Eta\_Modelling\_LL & $0.0223999^{+ 1.04526}_{-1.04526}$ \\
+ATLAS\_JES\_FlavComp\_TAU\_G & $-0.00776667^{+ 0.92855}_{-0.92855}$ \\
+ATLAS\_JES\_FlavComp\_TAU\_Q & $0.00894212^{+ 1.00898}_{-1.00898}$ \\
+ATLAS\_JES\_FlavResp & $-0.102976^{+ 1.02633}_{-1.02633}$ \\
+ATLAS\_JES\_Flavb & $0.0731524^{+ 1.11258}_{-1.11258}$ \\
+ATLAS\_JES\_Mu & $0.0651246^{+ 0.862114}_{-0.862114}$ \\
+ATLAS\_JES\_NPV & $0.00858994^{+ 1.08172}_{-1.08172}$ \\
+ATLAS\_JVF\_2012 & $-0.00635263^{+ 0.893737}_{-0.893737}$ \\
+\hline
+    \end{tabular}
+    \caption{Postfit nusiance parameters of the combined fit for $\tilde{d}=0$.}
+      \label{tab:pulls3}
+  \end{center}
+\end{table}
+
+\begin{table}[t!]
+  \begin{center}
+    \begin{tabular}{|l|c|}
+      \hline
+Nuisance parameter & postfit value (in $\sigma$ unit) \\\hline\hline
+ATLAS\_LUMI\_2012 & $0.0111734^{+ 0.992865}_{-0.992865}$ \\
+ATLAS\_MET\_RESOSOFT\_2012 & $-0.0164973^{+ 0.951647}_{-0.951647}$ \\
+ATLAS\_MET\_SCALESOFT\_2012 & $-0.00368271^{+ 0.993117}_{-0.993117}$ \\
+ATLAS\_MUID\_RES & $-0.00754541^{+ 0.976735}_{-0.976735}$ \\
+ATLAS\_MUMS\_RES & $-0.0535247^{+ 0.894482}_{-0.894482}$ \\
+ATLAS\_MU\_EFF\_2012 & $0.00202395^{+ 0.993331}_{-0.993331}$ \\
+ATLAS\_MU\_EFF\_2012\_Emb & $-0.000157762^{+ 0.993483}_{-0.993483}$ \\
+ATLAS\_MU\_SCALE & $-0.0387827^{+ 0.970044}_{-0.970044}$ \\
+ATLAS\_Matching\_ACCEPT & $2.58625e-05^{+ 0.993675}_{-0.993675}$ \\
+ATLAS\_PU\_RESCALE\_2012 & $-0.00228791^{+ 0.993368}_{-0.993368}$ \\
+ATLAS\_TAU\_EFAKE\_2012 & $0.0294992^{+ 0.989091}_{-0.989091}$ \\
+ATLAS\_TAU\_ID\_2012 & $0.00330533^{+ 0.994196}_{-0.994196}$ \\
+ATLAS\_TAU\_ID\_STAT\_2012 & $0.000396032^{+ 0.993711}_{-0.993711}$ \\
+ATLAS\_TES\_FAKE\_2012 & $0.022017^{+ 1.03059}_{-1.03059}$ \\
+ATLAS\_TES\_InSitu\_2012 & $-0.128732^{+ 0.970715}_{-0.970715}$ \\
+ATLAS\_TES\_Model\_2012 & $0.0550519^{+ 0.863116}_{-0.863116}$ \\
+ATLAS\_TES\_SingPart\_2012 & $-0.0163963^{+ 1.00855}_{-1.00855}$ \\
+ATLAS\_TRIG\_LL12\_SF & $0.000106315^{+ 0.992758}_{-0.992758}$ \\
+ATLAS\_UE\_gg & $-0.000544947^{+ 0.993357}_{-0.993357}$ \\
+ATLAS\_UE\_qq & $0.00213974^{+ 0.992665}_{-0.992665}$ \\
+GenAccq2Z & $0.0192209^{+ 0.99196}_{-0.99196}$ \\
+NLO\_EW\_Higgs & $-9.25691e-07^{+ 0.993469}_{-0.993469}$ \\
+QCDscale\_V & $0.00153988^{+ 0.993383}_{-0.993383}$ \\
+QCDscale\_VH & $-1.1952e-05^{+ 0.993393}_{-0.993393}$ \\
+QCDscale\_VV & $0.0118548^{+ 0.993028}_{-0.993028}$ \\
+QCDscale\_ggH\_m12 & $0.00317132^{+ 0.992818}_{-0.992818}$ \\
+QCDscale\_qqH & $-0.000172463^{+ 0.993491}_{-0.993491}$ \\
+pdf\_Higgs\_gg & $0.00101852^{+ 0.993394}_{-0.993394}$ \\
+pdf\_Higgs\_gg\_ACCEPT & $0.000937496^{+ 0.993334}_{-0.993334}$ \\
+pdf\_Higgs\_qq & $7.63773e-05^{+ 0.993566}_{-0.993566}$ \\
+pdf\_Higgs\_qq\_ACCEPT & $-0.000416308^{+ 0.993372}_{-0.993372}$ \\
+pdf\_gg & $7.87028e-05^{+ 0.992856}_{-0.992856}$ \\
+pdf\_qq & $0.0153984^{+ 0.991378}_{-0.991378}$ \\
+\hline
+    \end{tabular}
+    \caption{Postfit nusiance parameters of the combined fit for $\tilde{d}=0$.}
+      \label{tab:pulls4}
+  \end{center}
+\end{table}
+
+}
+
+
+\clearpage
+
+

@@ -1,0 +1,144 @@
+%-------------------------------------------------------------------------------
+% This file contains the title, author and abstract.
+% It also contains all relevant document numbers used by the different cover pages.
+%-------------------------------------------------------------------------------
+
+% Title
+\AtlasTitle{Study of CP properties of the Higgs boson using VBF events in the ditau channel -- Support Note}
+
+% Author - this does not work with revtex (add it after \begin{document})
+%\author{The ATLAS Collaboration}
+
+
+% Authors and list of contributors to the analysis
+% \AtlasAuthorContribute also adds the name to the author list
+% Include package latex/atlascontribute to use this
+% Use authblk package if there are multiple authors, which is included by latex/atlascontribute
+ \usepackage{authblk}
+ \renewcommand\Authands{, } % avoid ``. and'' for last author
+ \renewcommand\Affilfont{\itshape\small} % affiliation formatting
+ \AtlasAuthorContributor{Attilio Andreazza}{$\dagger$}{Supervision of Alessia Murrone}
+  \AtlasAuthorContributor{Quentin Buat}{$\mathsection$}{Assistance with implementation and sample production for had-had channel}
+ \AtlasAuthorContributor{Elias Coniavitis}{*}{Htautau CP working group co-coordinator; analysis strategy development; extraction of tau 4-vectors from leplep MMC code; paper editor}
+  \AtlasAuthorContributor{Vincent Croft}{$\diamond$}{Main analyser of had-had channel}
+  \AtlasAuthorContributor{Noel Dawe}{$\times$}{Analysis framework for had-had channel}
+  \AtlasAuthorContributor{Sinead Farrington}{$\ddagger$}{Supervision of Martin Spangenberg} 
+  \AtlasAuthorContributor{Michel Janus}{$\Join$}{Co-development of lephad analysis framework and helping in supervising Martin Spangenberg} 
+ \AtlasAuthorContributor{Florian Kiss}{*}{Validation of matrix element calculations and code for VBF signal; generator and reconstruction level investigations of the optimal observable; sharing of theoretical and technical expertise}    
+ \AtlasAuthorContributor{Stanley Lai}{$\Join$}{Partial supervision of Florian Kiss}   
+ \AtlasAuthorContributor{Alessia Murrone}{$\dagger$}{Validation of reweighting method} 
+  \AtlasAuthorContributor{Elisabetta Pianori}{$\ddagger$}{Supervision of Alessia Murrone; translation between CP-mix parameters; definition of theory uncertainty evaluation strategy; paper editor}
+ \AtlasAuthorContributor{Dirk Sammel}{*}{Implementation of optimal observable and reweighting calculation in leplep channel; reweighting studies}
+ \AtlasAuthorContributor{Christian Schillo}{*}{Main analyser of lep-lep channel (contributions too numerous to mention); production of final plots and numbers; responsible for combined fit of all channels; support note editor}   
+ \AtlasAuthorContributor{Ulrike Schnoor}{*}{Evaluation of impact of scale uncertainties on the VBF signal}   
+    \AtlasAuthorContributor{Markus Schumacher}{*}{Development of code for reweighting and for calculation of the optimal observable based on HAWK 2.0; supervision of Freiburg activities; paper editor}   
+    \AtlasAuthorContributor{Martin Spangenberg}{$\ddagger$}{Main analyser of lep-had channel (contributions too numerous to mention); production of final plots and numbers; support note editor}   
+    \AtlasAuthorContributor{Daniele Zanzi}{$\times$}{Htautau CP working group co-coordinator}   
+      
+   
+   
+   
+% \AtlasAuthorContributor{Third AtlasAuthorContributor}{a}{Author's contribution.}
+% \AtlasContributor{Fourth AtlasContributor}{Contribution to the analysis.}
+% \author[a]{First Author}
+% \author[a]{Second Author}
+% \author[b]{Third Author}
+ \affil[$\dagger$]{INFN Milano}
+ \affil[$\mathsection$]{Simon Fraser University, Burnaby BC}
+ \affil[*]{Albert-Ludwigs-Universit\"at, Freiburg}
+ \affil[$\diamond$]{Radboud University Nijmegen/Nikhef}
+ \affil[$\times$]{University of Melbourne}  
+  \affil[$\ddagger$]{University of Warwick}
+  \affil[$\Join$]{Georg-August-Universit\"at, G\"ottingen}  
+  
+% If a special author list should be indicated via a link use the following code:
+% Include the two lines below if you do not use atlasstyle:
+% \usepackage[marginal,hang]{footmisc}
+% \setlength{\footnotemargin}{0.5em}
+% Use the following lines in all cases:
+% \usepackage{authblk}
+% \author{The ATLAS Collaboration%
+% \thanks{The full author list can be found at:\newline
+%   \url{https://atlas.web.cern.ch/Atlas/PUBNOTES/ATL-PHYS-PUB-2014-007/authorlist.pdf}}
+% }
+
+% Date: if not given, uses current date
+\date{\today}
+
+% Draft version:
+% Should be 1.0 for the first circulation, and 2.0 for the second circulation.
+% If given, adds draft version on front page, a 'DRAFT' box on top of each other page, 
+% and line numbers.
+% Comment or remove in final version.
+\AtlasVersion{0.6}
+
+% ATLAS reference code, to help ATLAS members to locate the paper
+%\AtlasRefCode{GROUP-2014-XX}
+
+% ATLAS note number. Can be an COM, INT, PUB or CONF note
+% \AtlasNote{ATLAS-CONF-2014-XXX}
+% \AtlasNote{ATL-PHYS-PUB-2014-XXX}
+ \AtlasNote{ATL-COM-PHYS-2015-201}
+
+% CERN preprint number
+% \PreprintIdNumber{CERN-PH-2014-XX}
+
+% ATLAS date - arXiv submission; to be filled in by the Physics Office
+% \AtlasDate{\today}
+
+% arXiv identifier
+% \arXivId{14XX.YYYY}
+
+% HepData record
+% \HepDataRecord{ZZZZZZZZ}
+
+% Submission journal and final reference
+% \AtlasJournal{Phys.\ Lett.\ B.}
+% \AtlasJournalRef{\PLB 789 (2014) 123}
+% \AtlasDOI{}
+
+% Abstract - % directly after { is important for correct indentation
+\AtlasAbstract{%
+This note presents a study of the the $HVV$ tensor structure of the Higgs boson, using the Vector Boson Fusion (VBF) production mode and the $\tau\tau$ final state. The measurement is performed using the Optimal Observable method, while the analysis categorisation and background estimation are done as in the $H\to\tau\tau$ couplings analysis. In the range considered, values of the mixing parameter between CP-even and CP-odd contributions,  \dtilde, of [-0.11,0.05] are found to be consistent with the data at the 1 sigma level.
+}
+
+%-------------------------------------------------------------------------------
+% The following information is needed for the cover page. The commands are only defined
+% if you use the coverpage option in atlasdoc or use the atlascover package
+%-------------------------------------------------------------------------------
+
+% List of supporting notes  (leave as null \AtlasCoverSupportingNote{} if you want to skip this option)
+% \AtlasCoverSupportingNote{Short title note 1}{https://cds.cern.ch/record/XXXXXXX}
+% \AtlasCoverSupportingNote{Short title note 2}{https://cds.cern.ch/record/YYYYYYY}
+%
+% OR (the 2nd option is deprecated, especially for CONF and PUB notes)
+%
+% Supporting material TWiki page  (leave as null \AtlasCoverTwikiURL{} if you want to skip this option)
+% \AtlasCoverTwikiURL{https://twiki.cern.ch/twiki/bin/view/Atlas/WebHome}
+
+% Comment deadline
+% \AtlasCoverCommentsDeadline{DD Month 2014}
+
+% Analysis team members - contact editors should no longer be specified
+% as there is a generic email list name for the editors
+% \AtlasCoverAnalysisTeam{Peter Analyser, Susan Editor1, Jenny Editor2, Alphonse Physicien}
+
+% Editorial Board Members - indicate the Chair by a (chair) after his/her name
+% Give either all members at once (then they appear on one line), or separately
+% \AtlasCoverEdBoardMember{EdBoard~Chair~(chair), EB~Member~1, EB~Member~2, EB~Member~3}
+% \AtlasCoverEdBoardMember{EdBoard~Chair~(chair)}
+% \AtlasCoverEdBoardMember{EB~Member~1}
+% \AtlasCoverEdBoardMember{EB~Member~2}
+% \AtlasCoverEdBoardMember{EB~Member~3}
+
+% A PUB note has readers and not an EdBoard -- give their names here (one line or several entries)
+% \AtlasCoverReaderMember{Reader~1, Reader~2}
+% \AtlasCoverReaderMember{Reader~1}
+% \AtlasCoverEdBoardMember{Reader~2}
+
+% Editors egroup
+% \AtlasCoverEgroupEditors{atlas-GROUP-2014-XX-editors@cern.ch}
+
+% EdBoard egroup
+% \AtlasCoverEgroupEdBoard{atlas-GROUP-2014-XX-editorial-board@cern.ch}
+

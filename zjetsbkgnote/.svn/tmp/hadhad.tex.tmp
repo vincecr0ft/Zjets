@@ -1,0 +1,117 @@
+\section{Description of all-hadronic analysis}
+\label{app:hadhad}
+
+This section addresses the absence of the fully hadronic di-tau final state from the bulk of this analysis. Despite a signal region that is less densely populated than the \tlhad signal region, it is hoped that the inclusion of the fully hadronic final state will improve the sensitivity to CP-odd couplings. 
+
+As with the other analysis channels the preselection and signal region definitions are identical to the VBF category of the couplings analysis~\cite{EvidencePaper} except for an additional cut on the BDT dis riminant (\bdtscore > 0.57) which is defined as the highest 3 bins of the BDT distribution in \thadhad
+
+As with the other analysis channels the preselection and signal region definitions are identical to the VBF category of the couplings analysis~\cite{EvidencePaper} except for an additional cut on the BDT discriminant (\bdtscore > 0.57) which is defined as the highest 3 bins of the BDT distribution in \thadhad. The classifier distribution used in the the VBF preselection region is shown in figure~\ref{fig:plot_hadhad_full_BDT}. The possibility of using a tighter cut on this BDT was investigated (using the top 2 bins) The higher signal to background ratio on this tigher signal region provided excellent signal purity and a very good expected sensitivity. However the low statistics (especially background statistics) meant that this region was very unstable with a distribition made mostly of empty bins.
+
+\begin{figure}[h!]
+  \centering
+   \includegraphics[width=\textwidth]{figures/hadhad/var_vbf_full_bdt_score_root.eps}
+   \caption{Classifier (BDT) distribution in the VBF category of the fully hadronic final state. The top 3 bins (\bdtscore > 0.57) defines the signal region used in this analysis.}
+  \label{fig:plot_hadhad_full_BDT}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/var_vbf_o1_nos_nonisol_ebz_12_stat_root.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/O1_shape_vbf_nOS_NONISOL_ebz_12_stat.eps}}
+   \caption{Distributions of \oo in the signal region (a) of the \thadhad\ channel. Comparison of \oo~for various signal models (b), nomralized to unity: pure SM (black), signal model of $\dtilde=-0.2$ (pink) and a model of $\dtilde=+0.6$ (blue). }
+  \label{fig:plot_hadhad_oo_sr}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/ggf-vbf_O1-vs-BDT_vbf_nOS_NONISOL_ebz_12_stat.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/ztt-vbf_O1-vs-BDT_vbf_nOS_NONISOL_ebz_12_stat.eps}}
+   \caption{Distributions of \oo in various bins of the BDT score. Comparison of the mean value of the \oo~for both dominant higgs production modes (a) and comparison of the mean value of the \oo for the vbf signal with $Z\rightarrow\tau\tau$ dominant background. No clear bias is seen as the fluctuations around 0 are small for all classifier scores.}
+  \label{fig:plot_hadhad_oo_by_bdt_bin}
+\end{figure}
+
+Figure~\ref{fig:plot_hadhad_oo_sr}(a) demonstrates that the optimal observable can be produced for various CP-mixing signal models for the fully hadronic final state. Figure~\ref{fig:plot_hadhad_oo_sr}(b) shows how different CP-mixing models will produce different optimal observable shapes. To assess the dependance of the BDT cut on the optimal observable the mean values of \oo is shown for each bin of the classifier for various samples. This can be seen in figure~\ref{fig:plot_hadhad_oo_by_bdt_bin} Since no clear trend between \oo and \bdtscore can be seen, the top 3 bins of this distribution will be used for a signal region and the lowest two for a control region.
+
+In the \thadhad channel, as seen in Figure~\ref{fig:plot_hadhad_oo_sr}(a) the dominant backgrounds come from $Z\rightarrow\tau\tau$ and QCD multi-jet production in which two jets fake taus. Unlike the other channels there are no dedicated Z or top control regions however the shape of the optimal observable is verified in the a control region defined as that region that fails the BDT cut of 0.57. This low BDT region is shown in figure~\ref{fig:plot_hadhad_crs}.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/var_vbf_low_bdt_score_root.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/var_rest_deta_tau1_tau2_nos_nonisol_ebz_12_stat_root.eps}}
+   \caption{The low BDT Control region is given by the lowest two bins of the classifier used in the coupling paper seen in figure~\ref{plot_hadhad_full_BDT} Here this control region is shown (a) alongside the distribution of the difference in Eta in the dTau system (b)}
+  \label{fig:plot_hadhad_low_bdt_cr}
+\end{figure}
+
+
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    Channel & Preselection \\
+    \hline
+    \multirow{6}{*}{\thadhad}
+    & One medium and one tight opposite-sign \thad-candidate \\
+    & Events with leptons are rejected \\
+    & $\MET > 20 \GeV$ \\
+    & \MET points between the two visible taus in $\phi$, or min$[\Delta\phi(,\tau,\MET)] <\pi/4$ \\
+    & $0.8 < \Delta R(\thad1,\thad2) < 2.4$ \\
+    &$\Delta\eta(\thad1,\thad2)<1.5$ \\
+    \hline\hline
+    Channel &  Signal region selection cuts \\ \hline\hline
+    \multirow{4}{*}{\thadhad}
+    & At least two jets with $p_T(j_1) > 50$ GeV and $p_T(j_2) > 30$ GeV \\
+    & $p_T(j_2) > 3.5$ GeV for jets with |$\eta$| $>2.4$\\
+    & $\Delta\eta(j_1,j_2) > 2.0 $ \\
+    & \bdtscore $> 0.57 $\\
+    \hline
+  \end{tabular}
+  \caption{Summary  of the preselection and the signal region selection used in the analysis, per channel. The only difference to the corresponding selections in~\cite{EvidencePaper, HtautauSupport}, is the final cut on the BDT score.  For definitions of the various quantities, please see Ref.~\cite{HtautauSupport}.}
+  \label{tab:regions}
+  \end{center}
+\end{table}
+
+To test the effect of the systematic variations on the observable we are trying to measure, a ranking of the nuisance parameters was created. The effect on the fit on \oo can be seen in figure~\ref{fig:plot_hadhad_ranking}
+
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/oo_hh_ranking.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/dphi_hh_ranking.eps}}
+   \caption{Ranking of nuisance parameters seen for a) the fit on \oo and b) on signed delta phi}
+  \label{fig:plot_hadhad_ranking}
+\end{figure}
+
+In addition to the variations displayed above that were all included in the evidence paper anaalysis, a series of additional systematic variations were investigated in figure~\ref{fig:plot_hadhad_qcd_scale}-~\ref{fig:plot_hadhad_reweight}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/minlo_compare_mode_gg_o1.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/minlo_compare_mode_gg_dphi.eps}}
+   \caption{QCD scale shape uncertainty on the optimal observable a) and dphi b) distributions of gluon fusion ggH events in the final signal region introduced by the BDTscore selection cut in \thadhad. The uncertainty was estimated by comparing distributions of MiNLO samples containing $H+2j$ and $H+3j$ events respectively.}
+  \label{fig:plot_hadhad_qcd_scale}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/jimmy_compare_mode_gg_o1.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/jimmy_compare_mode_gg_dphi.eps}}
+   \caption{Underlying Event/Parton Shower shape uncertainty on the optimal observable a) and signed delta phi b) distributions of gluon fu- sion ggH events in the final signal region introduced by the BDTscore selection cut in \thadhad. The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively}
+  \label{fig:plot_hadhad_ps_ggh}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/jimmy_compare_mode_VBF_o1.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/jimmy_compare_mode_VBF_dphi.eps}}
+   \caption{Underlying Event/Parton Shower shape uncertainty on the optimal observable a) and signed delta phi b) distribution of VBF signal events in the final signal region introduced by the BDTscore selection cut in \thadhad. The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively.}
+  \label{fig:plot_hadhad_ps_vbf}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/reweighting_compare_VBF_o1.eps}}
+   \subfloat[]{  \includegraphics[width=0.49\textwidth]{figures/hadhad/reweighting_compare_VBF_dphi.eps}}
+   \caption{Reweighting shape uncertainty on the optimal observable a) and signed delta phi b) distribution of VBF signal events in the final emsignal region due to the signal re-weighting procedure in \thadhad.}
+  \label{fig:plot_hadhad_reweight}
+\end{figure}

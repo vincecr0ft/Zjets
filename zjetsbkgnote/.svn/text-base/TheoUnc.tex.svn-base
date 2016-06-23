@@ -1,0 +1,101 @@
+\subsection{Theoretical Uncertainties}
+\label{subsec:theounc}
+
+Similarly to experimental uncertainties, for the theoretical uncertainties, the prescriptions and recipes of the couplings analysis were followed. With respect to theoretical uncertainties on the signal production cross-section and Branching Ratio, as well as the electroweak corrections to the VBF process, the exact same uncertainties (originating from the Higgs Cross Section Working Group prescriptions) were used. The same holds for all theoretical uncertainties on (background) processes other than Higgs production.
+
+In addition to these, theoretical uncertainties relating to the acceptance of the \bdtscore\ cut, as well as on the shape of the optimal observable, were evaluated in the context of this analysis. The acceptance uncertainty for the \bdtscore\ cut needed to be evaluated, since uncertainties evaluated in the context of the couplings analysis only account for uncertainties on the acceptance up to the VBF region selection. Furthermore an uncertainty based on the reweighting procedure for the anomalous couplings has also been evaluated and applied. All these are described in the following. In all cases, for the signal, the evaluation was done for the \dtilde=0 case, with the assumption that the relative effects of the uncertainties are constant and can be applied to any \dtilde-scenario (for shape uncertainties the bin-by-bin ratio is used).
+
+\subsubsection{QCD scale uncertainties on gluon-fusion}
+
+\paragraph{Normalisation} To evaluate whether an additional normalisation uncertainty needed to be applied to account for the cut on the \bdtscore, a comparison was made between the default H+1jet MINLO sample, and an alternative H+2jets MINLO sample. The acceptance of the cut on the \bdtscore\ was compared, relative to the VBF-region selection (i.e. $N(\textrm{SR})/N(\textrm{VBF region})$). The difference between the samples would represent the uncertainty on the LO description of the second jet in the default sample. In both channels, however, this acceptance was the same for both samples within statistical uncertainties. Therefore no additional uncertainty due to this was applied, beyond the QCD-scale uncertainty already evaluated in the context of the couplings analysis, for the acceptance of the VBF region selection.
+
+\paragraph{Shape} To account for the uncertainty in the shape of the optimal observable/\signdphi, the distribution for the default sample was compared to that from the alternative H+2jets MINLO sample. The difference was symmetrised and taken as a systematic uncertainty.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_QCD_optobs.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_ggHJ125tautaull8TeV_ggHJJ125tautaull8TeV_OptObsMMC_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}  }
+   \caption{QCD scale shape uncertainty on the optimal observable distribution of gluon fusion ggH events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of MiNLO samples containing $H+2j$ and $H+3j$ events respectively.}
+  \label{fig:plot_qcdscale_shape_optobs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_QCD_dphi.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_ggHJ125tautaull8TeV_ggHJJ125tautaull8TeV_signdphijj2_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}  }
+   \caption{QCD scale shape uncertainty on the \signdphi distribution of gluon fusion ggH events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of MiNLO samples containing $H+2j$ and $H+3j$ events respectively.}
+  \label{fig:plot_qcdscale_shape_dphi}
+\end{figure}
+
+
+\subsubsection{QCD scale uncertainties on VBF}
+
+Possible uncertainties on the optimal observable/\signdphi\ distribution due to the choice of renormalisation and factorisation scales on the VBF samples were evaluated at truth level using MadGraph5\_aMCatNLO and varying the renormalisation and factorisation scale.  No noticable effect was observed beyond statistical fluctuations, so no further uncertainty was assigned due to that.
+ Normalisation uncertainties due to the QCD scale evaluated in the context of the couplings analysis were re-confirmed and applied.
+More information can be found in Appendix~\ref{app:scalevbf}.
+
+
+
+\subsubsection{Underlying Event/Parton Shower uncertainties}
+
+\paragraph{Normalisation} In order to evaluate the effect of the Underlying Event/Parton Shower choice, the acceptance for the \bdtscore cut relative to the VBF region selection was evaluated, by comparing it between Powheg+Pythia and Powheg+Herwig samples. The obtained difference, in those cases where it is larger than the corresponding statistical uncertainties,  is assigned as a systematic uncertainty, conservatively added in quadrature with the corresponding uncertainty on the acceptance for the VBF region selection, which was evaluated (with the same samples) in the context of the couplings analysis. This procedure was followed for both the VBF and gluon-fusion processes.
+
+\paragraph{Shape} The effect of this uncertainty on the shape of the optimal observable/\signdphi\  was evaluated by comparing the distribution for Powheg+Pythia and Powheg+Herwig; the relative bin-by-bin difference is symmetrised and applied as a shape uncertainty.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_UEPS_ggH_optobs.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_ggH125tautaull8TeV_ggHJimmy8TeV_OptObsMMC_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}  }
+   \caption{Underlying Event/Parton Shower shape uncertainty on the optimal observable distribution of gluon fusion ggH events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively.}
+  \label{fig:plot_ueps_shape_ggh_optobs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_UEPS_VBF_optobs.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_VBFH125tautaull8TeV_VBFHJimmy8TeV_OptObsMMC_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}}
+   \caption{Underlying Event/Parton Shower shape uncertainty on the optimal observable distribution of VBF signal events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively.}
+  \label{fig:plot_ueps_shape_vbf_optobs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_UEPS_ggH_dphi.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_ggH125tautaull8TeV_ggHJimmy8TeV_signdphijj2_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}  }
+   \caption{Underlying Event/Parton Shower shape uncertainty on the \signdphi distribution of gluon fusion ggH events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively.}
+  \label{fig:plot_ueps_shape_ggh_dphi}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_UEPS_VBF_dphi.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/compII_VBFH125tautaull8TeV_VBFHJimmy8TeV_signdphijj2_all_SR_cpHighVBFbVeto_cpHighVBFbVeto.eps}  }
+   \caption{Underlying Event/Parton Shower shape uncertainty on the \signdphi distribution of VBF signal events in the final signal region introduced by the \bdtscore~selection cut in \tlhad (a) and \tll (b). The uncertainty was estimated by comparing distributions of samples generated with Powheg+Pythia and Powheg+Herwig respectively.}
+  \label{fig:plot_ueps_shape_vbf_dphi}
+\end{figure}
+
+\subsubsection{PDF uncertainties}
+\paragraph{Normalisation} A reweighting was performed using the eigentunes of the default CT10 PDF, as well as two alternative PDFs (MSTW and NNPDF). The acceptance of the full signal-region selection (including the cut on the \bdtscore) was evaluated for each reweighting, and the largest of any of these variations used as the uncertainty on the normalisation due to the PDF choice. For the VBF case the Powheg+Pythia sample was reweighted, whereas for the gluon-fusion case an MCatNLO sample was used.
+
+\paragraph{Shape} Using the same reweighting, the largest bin-by-bin variation between the alternative PDF sets, compared to the default CT10, was assigned as a possible shape uncertainty. However in both channels the effect on the shape of the discriminating variable was found to be completely negligible. Therefore no shape uncertainty was assigned.
+
+ \subsubsection{Reweighting procedure}\label{subsubsec:reweighting-uncertainties}
+An uncertainty is assigned on the shape of the discriminating variable to account for the reweighting procedure described in Section~\ref{subsec:reweight}. From the validation of this procedure, described in Appendix~\ref{app:reweight}, it can be seen that very good agreement is found at truth-level between a sample generated with anomalous couplings, and one reweighted using our procedure. The remaining small difference between generated and reweighted is assigned as a systematic uncertainty: a bin-by-bin ratio is calculated (using 30 bins); using these ratios as weights, the reconstruction-level sample is reweighted as a function of each event's truth-level optimal observable/\signdphi\  value. The difference between this (doubly) reweighted sample and the default is then used as a shape uncertainty.
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_reweighting_optobs.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/Comp_CPSystReweight_OptObs.eps}  }
+   \caption{Reweighting shape uncertainty on the optimal observable distribution of VBF signal events in the final signal region due to the signal re-weighting procedure in \tlhad (a) and \tll (b).}
+  \label{fig:plot_reweighting_shape_optobs}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/lephad/theory_unc_shapes/theoryshape_lephad_reweighting_dphi.eps}  }
+   \subfloat[]{    \includegraphics[width=0.49\textwidth]{figures/leplep/theory_unc_shapes/Comp_CPSystReweight_SignDPhi.eps}  }
+   \caption{Reweighting shape uncertainty on the \signdphi distribution of VBF signal events in the final signal region due to the signal re-weighting procedure in \tlhad (a) and \tll (b).}
+  \label{fig:plot_reweighting_shape_dphi}
+\end{figure}
+
+\clearpage
